@@ -9,4 +9,7 @@ h1, h2, p {
 }
 body {
    */ background-color: burlywood; */
-    }        
+    }   
+    .flavor [
+    text-align: left;
+    ]     
