@@ -13,6 +13,9 @@ body {
     font-family: sans-serif;
    */ background-color: burlywood; */
     }  
+    h1, h2 {
+        font-family: Impact;
+    }
     .item p {display:inline-block} 
     .flavor .dessert [
     text-align: left;
