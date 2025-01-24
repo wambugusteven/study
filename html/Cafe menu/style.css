@@ -10,6 +10,7 @@ h1, h2, p {
     max-width: 500px;
 }
 body {
+    font-family: sans-serif;
    */ background-color: burlywood; */
     }  
     .item p {display:inline-block} 
