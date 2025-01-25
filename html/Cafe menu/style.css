@@ -14,7 +14,7 @@ body {
    */ background-color: burlywood; */
     }  
     h1, h2 {
-        font-family: Impact;
+        font-family: Impact,serif;
     }
     .item p {display:inline-block} 
     .flavor .dessert [
