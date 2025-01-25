@@ -12,7 +12,10 @@ h1, h2, p {
 body {
     font-family: sans-serif;
    */ background-color: burlywood; */
-    }  
+    } 
+    .established {
+        font-style: italic;
+    } 
     h1, h2 {
         font-family: Impact,serif;
     }
