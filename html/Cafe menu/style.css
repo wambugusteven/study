@@ -19,6 +19,9 @@ body {
    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
    padding: 20px;
     } 
+    .bottom-line {
+        margin-top: 25px;
+      }
     h1 {
         font-size: 40px;
     }
