@@ -10,11 +10,11 @@ h1 {
     margin: 10px auto;
 }
 .one {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
 }
 .two {
-    background-color: green;
+    background-color: rgb(0, 127, 0);
 }
 .one {
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
 }
