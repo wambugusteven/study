@@ -54,6 +54,9 @@ body {
      footer {
         font-size: 14px;
       }
+      .address {
+        margin-bottom: 5px;
+      }
       a:visited {
         color: black;
       }
