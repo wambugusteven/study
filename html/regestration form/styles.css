@@ -23,6 +23,7 @@ body {
     padding-top : 2rem;
     padding-left: 0;
     padding-right: 0;
+    border-bottom: 3px solid #3b3b4f
   }
   label { 
     display: block;
