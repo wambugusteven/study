@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <h1 id="title">
-            freecodecamp survey form
-        </h1>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style">
-    </head>
+  <head>
+  <h1 id="title"> freeCodeCamp Survey Form </h1>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <div class="container">
+  <body>
+    <p id="description">
+   Personal details:
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name-label"> Name:<input id="name-label" type="text" name="text" placeholder="Enter your name..." required/></label>
+      </fieldset>
+      <fieldset>
+        <label for="email-label">Email:<input id="email-label" name="email" pattern=".+@example/.com" size="30" placeholder="Enter your example.com email..." required/></label>
+      </fieldset>
+      <fieldset>
+        <label for="number-label">Age(years): <input id="number-label" name="number" min="18" max="100" placeholder="Enter your age in years..." required/></label>
+      </fieldset>
+      <fieldset>
+       <label for="referrer">Starting FreeCodeCamp is an exciting journey! 
+         <select id="referrer" name="referrer">
+           <option value="">(Questions you should be ready to answer)</option>
+           <option value="1">Why am I interested in learning to code?</option>
+           <option value="2">How much time can I realistically dedicate to learning?</option>
+           <option value="3">What is my learning style?</option>
+           <option value="4">Am I ready to ask for help when needed?</option>
+         </select>
+        </label> 
+      </fieldset>
+      <legend>Your comments or any suggestion?</legend> 
+     <label> <textarea placeholder="Enter your comments here......" rows="5" cols="31" type="text" id=comment name=comment> </textarea><label>
+       <hr/>
+       <fieldset>
+         <legend> How did you hear about us? </legend> 
+      <label for="internet">Internet<input type="radio" id="internet" checked name="information"/></label>
+      <label for="friends">From friends<input type="radio"id="friends" name="information"/><label/>
+      </fieldset>
+    <div>
+        <input type="Submit" value="Submit"/>
+    </div>
+  <body>
 </html>
