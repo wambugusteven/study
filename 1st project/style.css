@@ -1,5 +1,6 @@
-input {
+div {
     background-color: #020202;
-    padding: 15px;
-    margin: 55px;
+}
+label {
+    color: rgb(255, 255, 255)
 }
