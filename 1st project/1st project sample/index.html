@@ -9,16 +9,23 @@
              </p>
         <form  id="survey-form">
             <fieldset>
-            <input type="text" name="name" placeholder="Write your first name..." required/>
-            <input type="text" name="last-name" placeholder="Write your last name..." required/>
+                <label for="name-label">
+            <input type="text" name="name" id="name-label" placeholder="Write your first name..." required/>
+                </label>
+                <label for="last-name">
+            <input type="text" name="last-name" id="last-name" placeholder="Write your last name..." required/>
+                </label>
             </fieldset>
             <fieldset>
-                <input type="text" name="email" placeholder="Enter your email..." required/>
+                <label for="email">
+                <input type="text" name="email" id="email" pattern=".+@example/.com" size="30" placeholder="Enter your email..." required/>
+                </label>
             </fieldset>
             <fieldset>
                 <input type="text" name="password" placeholder="Enter your password..." required/>
             </fieldset>
         </form>
+
         <label>
             <fieldset>
                 <legend>Select your gender</legend>
@@ -26,5 +33,8 @@
                 female<input type="radio" name="gender"/>
                     others<input type="radio" name="gender"/>
         </label>
+      <label>
+
+      </label>
     </body>
 </html>
