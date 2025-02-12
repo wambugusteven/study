@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
         <meta charset="UTF-8">
-        <title></title>
-    </head>
+        <h1 type="title">freeCodeCamp Survey Form</h1>
+        <link rel="stylesheet" href="styles.css"> 
     <body>
-        <form>
+        <p id="description">
+            Personal details:
+             </p>
+        <form  id="survey-form">
+            <fieldset>
             <input type="text" name="name" placeholder="Write your first name..." required/>
             <input type="text" name="last-name" placeholder="Write your last name..." required/>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="email" placeholder="Enter your email..." required/>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="password" placeholder="Enter your password..." required/>
+            </fieldset>
         </form>
         <label>
-            <legend>Select your gender</legend>
-            <select>
-            <option>Male<input type="radio" name="gender" value="male" checked/></option>
-                <option>Female <input type="radio" name="gender" value="female"/></option>
-                    <option>Others <input type="radio" name="gender" value="others"/></option>
+            <fieldset>
+                <legend>Select your gender</legend>
+            male<input type="radio" name="gender" checked/>
+                female<input type="radio" name="gender"/>
+                    others<input type="radio" name="gender"/>
         </label>
     </body>
 </html>
