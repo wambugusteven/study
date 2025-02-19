@@ -14,13 +14,15 @@ html {
     box-sizing: border-box;
 }
 h1 {
-    font-weight: 800;
     text-align: center;
     margin-top: -4px;
     margin-bottom: -4px;
     margin-right: 0;
     margin-left: 0;
     letter-spacing: 0.15px;
+}
+.bold {
+    font-weight: 800;
 }
 p {
     margin: 0;
