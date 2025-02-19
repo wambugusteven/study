@@ -54,3 +54,11 @@ p {
     justify-content: space-between;
     align-items: flex-end;
   }
+  left-container p {
+    margin-top:-5px;
+    margin-bottom: -5px;
+    margin-left: -2px;
+    margin-right: -2px;
+    font-size: 2em;
+    font-weight: 700;
+  }
