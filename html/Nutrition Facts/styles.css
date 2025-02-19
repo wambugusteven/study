@@ -4,3 +4,6 @@ body {
 html {
     font-size: 16px;
 }
+.label {
+    border: 2px solid black;
+}
