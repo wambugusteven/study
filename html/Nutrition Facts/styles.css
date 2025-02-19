@@ -6,4 +6,10 @@ html {
 }
 .label {
     border: 2px solid black;
+    width: 270px;
+    margin: 270px auto;
+    padding: 0 7px;
+}
+* {
+    box-sizing: border-box;
 }
