@@ -21,11 +21,26 @@
     </header>
     <main>
         <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            
             <section role="region" aria-labelledby="student-info">
-                <h2 id="student-info">Student information</h2>
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                  <label for="student-name" type="text"  >Name:</label>
+                  <input id="student-name" name="student name" placeholder="Enter your name here..." />
+                </div>
+                <div class="info">
+                  <label for="student-email"> Email:</label>
+                  <input id="student-email" type="email" name="email"/>
+                </div>
+                <div class="info">
+                  <label for="birth-date"  >Date of Birth:</label>
+                  <input id="birth-date" type="date" name="date of birth"/>
+                </div>
               </section>
+      
+
               <section role="region" aria-labelledby="html-questions">
-                <h2 id="html-questions">Html Questions</h2>
+                <h2 id="html-questions">HTML</h2>
                 <div class="info">
                     <label for="student-name">Student Name</label>
                     <input id="student-name"/>
