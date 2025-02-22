@@ -67,3 +67,10 @@ body {
   li > a {
     color: #ef12ef;
   }
+
+  nav > ul > li:hover  {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  
+  }
