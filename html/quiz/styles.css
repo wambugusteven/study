@@ -63,3 +63,7 @@ body {
   padding: 0.2rem;
   display: block;
   }
+
+  li > a {
+    color: #ef12ef;
+  }
