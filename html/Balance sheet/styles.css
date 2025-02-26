@@ -31,3 +31,7 @@ html {
     flex-direction: column-reverse;
     gap: 1rem;
   }
+
+  h1 .flex span:first-of-type {
+    font-size: 0.7em;
+  }
