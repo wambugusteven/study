@@ -45,3 +45,10 @@ html {
     margin: 0 auto;
     border: 2px solid #d0d0d5;
   }
+
+  #years {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    position: sticky;
+  }
