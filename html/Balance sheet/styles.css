@@ -79,3 +79,9 @@ html {
   position: relative;
   margin-top: 3rem;
   }
+
+  table caption {
+    color: #356eaf;
+    font-weight: normal;
+    font-size: 1.3em;
+  }
