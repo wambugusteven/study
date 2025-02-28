@@ -63,3 +63,7 @@ html {
     text-align: right;
     font-weight: bold;
   }
+
+  .table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+  }
