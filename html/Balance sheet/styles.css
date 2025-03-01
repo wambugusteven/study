@@ -144,7 +144,6 @@ tr.data th .description {
 
 tr.data td {
   vertical-align: top;
-  horizontal-align: right;
   text-align: right;
   padding: 0.3rem 0.25rem 0;
 }
