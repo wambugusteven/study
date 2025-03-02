@@ -31,3 +31,9 @@
   border-top-right-radius: 10px; 
   transform: rotate(-45deg);
   }
+
+  .cat-right-ear {
+    border-right: 35px solid transparent;
+    border-left: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+  }
