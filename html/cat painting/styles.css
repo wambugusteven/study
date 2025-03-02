@@ -53,4 +53,8 @@
     position: absolute;
     top: 22px;
     left: -20px;
+    border-bottom-right-radius: 40%;
+border-bottom-left-radius: 40%;
+border-top-left-radius: 90px;
+border-top-right-radius: 10px;  
   }
