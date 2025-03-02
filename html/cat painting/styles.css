@@ -115,3 +115,9 @@ left: 18px;
 transform: rotate(-5deg);
 border-radius: 60%;  
   }
+
+  .cat-nose {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c;
+  }
