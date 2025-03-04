@@ -48,3 +48,9 @@ html {
     position: absolute;
     top: 23px;
   }
+
+  @media (max-width: 768px) {
+    .card {
+      padding: 2rem;
+    }
+  }
