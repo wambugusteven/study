@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    background-color: purple;
+    border-radius: 21rem;
+    margin: 5px 5px;
+    padding: 1px 1px;
+    font-weight: italic;
+  }
+  main {
+    background-color: gray;
+    width: 700px;
+  }
+  nav {
+    text-align: left;
+    background-color: green;
+  }
+  @media (max-width: 768px) {
+    main {
+      width: 500px;
+    }
+  
