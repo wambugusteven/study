@@ -5,6 +5,8 @@ h1 {
     margin: 5px 5px;
     padding: 1px 1px;
     font-weight: italic;
+    width: 700px;
+    
   }
   main {
     background-color: gray;
@@ -13,9 +15,10 @@ h1 {
   nav {
     text-align: left;
     background-color: green;
+    width: 700px;
   }
   @media (max-width: 768px) {
     main {
       width: 500px;
     }
-  
+}
