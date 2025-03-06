@@ -16,7 +16,6 @@
   align-items: flex-end;
   justify-content: space-evenly;
 }
-  }
   
   .bb1 {
     width: 10%;
@@ -29,8 +28,8 @@
 
   .bb1a {
     width: 70%;
-    height: 10%
-    background-color: var(--building-color1);
+    height: 10%;
+    background-color: var(--building-color1)
   } 
   .bb1b {
     width: 80%;
@@ -51,6 +50,7 @@
   .bb2 {
     width: 10%;
     height: 50%;
+    background-color: var(--building-color2);
   }
   .bb3 {
     width: 10%;
