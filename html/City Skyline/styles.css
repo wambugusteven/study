@@ -35,12 +35,7 @@
 
   .bb1a {
     width: 70%;
-    height: 10%;
     background-color: var(--building-color1);
-    background: linear-gradient(
-    var(--building-color1),
-    var(--window-color1)
-  );
   } 
   .bb1b {
     width: 80%;
@@ -72,6 +67,14 @@
     width: 11%;
     height: 58%;
     background-color: var(--building-color4)
+  }
+
+  .bb1-window {
+    height: 10%;
+    background: linear-gradient(
+       var(--building-color1),
+       var(--window-color1)
+     );
   }
 
   /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
@@ -115,4 +118,5 @@
     position: absolute;
     top: 0;
   }
+  
   
