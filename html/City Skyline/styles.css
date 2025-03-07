@@ -157,7 +157,9 @@
       var(--window-color4) 90%
       );
   }
-
+  .fb1a {
+    border-bottom: 7vh solid var(--building-color4);
+ }
 
   .fb2 {
     width: 10%;
