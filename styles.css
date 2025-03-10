@@ -1,5 +1,7 @@
 .webpage {
     background-color: blueviolet;
-    display: flex;
-    justify-content: center;
+    width: auto;
+    height: 700px;
+    position: absolute;
+    
 }
