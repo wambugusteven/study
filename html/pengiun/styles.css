@@ -160,3 +160,21 @@ body {
   .blush.right {
     right: 15%;
   }
+
+  .beak {
+    height: 10%;
+    border-radius: 50%;
+    background-color: orange;
+  }
+
+  .beak.top {
+    width: 20%;
+    top: 60%;
+    left: 40%;
+  }
+
+  .beak.bottom {
+    width: 16%;
+    top: 65%;
+    left: 42%;
+  }
