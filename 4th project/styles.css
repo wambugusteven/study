@@ -22,7 +22,15 @@ body {
   }
   
   nav {
-    font-weight: 400;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: indigo;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
   }
   
   .price {
