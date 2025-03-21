@@ -9,5 +9,5 @@ for (let i = 0; i < count; i = i+ 1) {
 let result = "";
 console.log(result);
 for (const row of rows) {
-
+    result = result + row
 }
