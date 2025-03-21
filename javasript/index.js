@@ -3,11 +3,13 @@ const count = 8;
 const rows = [];
 
 const title = "character"
-function padRow(name) {
-  return character + name;
+function padRow() {
+  const test = "Testing";
+  
+  return test;
+  ;
 }
-padRow("Steven")
-const call = padRow("CamperChan");
+const call = padRow();
 console.log(call);
 
 
