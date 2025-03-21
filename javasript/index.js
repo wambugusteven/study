@@ -2,20 +2,23 @@ const character = "#";
 const count = 8;
 const rows = [];
 
+const title = "character"
 function padRow(name) {
-  return name;
+  return character + name;
 }
-padRow();
-padRow("Steven");
-const call = padRow();
+padRow("Steven")
+const call = padRow("CamperChan");
 console.log(call);
 
-for (let i = 0; i < count; i = i+ 1) {
-    rows.push(character.repeat(i+1));
+
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i + 1))
 }
 
-let result = "";
+let result = ""
+
 for (const row of rows) {
-    result = result + row + "\n";
-  }
+  result = result + row + "\n";
+}
+
 console.log(result);
