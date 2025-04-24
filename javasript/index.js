@@ -19,7 +19,9 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count))
 } */
 
-  const numbers = [1, 2, 3]
+  const numbers = [1, 2, 3];
+  const unshifted = numbers.unshift(5);
+console.log(unshifted);
 console.log(numbers);
 
 let result = ""
