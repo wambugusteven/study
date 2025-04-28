@@ -53,6 +53,7 @@ function update(location) {
  }
  
  function goStore() {
+  update(locations[1]);
    
  }
 
@@ -69,4 +70,10 @@ function goCave() {
   function buyWeapon() {
     
   }
-  
+ 
+  function fightSlime() {
+
+  }
+  function fightBeast() {
+    
+  }
