@@ -99,6 +99,7 @@ function goCave() {
    }
   }
   function buyWeapon() {
+    if (currentWeaponIndex < 3) {
     if(gold >= 30) {
       gold -= 30;
       currentWeaponIndex ++;
@@ -112,6 +113,7 @@ function goCave() {
     } else {
       text.innerText = "You do not have enough gold to buy a weapon.";
     }
+  }
   }
  
   function fightSlime() {
