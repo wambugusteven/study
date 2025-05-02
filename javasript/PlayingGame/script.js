@@ -128,6 +128,8 @@ function goCave() {
     const selltWeapon = inventory.shift();
     text.innerText = "You sold a " + currentWeapon + ".";
     text.innerText += " In your inventory you have: " + inventory;
+    inventory.length 
+    text.innerText =  "Don't sell your only weapon!";
     }
   }
  
