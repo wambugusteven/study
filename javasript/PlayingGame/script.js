@@ -143,5 +143,6 @@ function fightDragon() {
 }
 
 function goFight() {
-
+  fighting = 0;
+  goFight()
 }
