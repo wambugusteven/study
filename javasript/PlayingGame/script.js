@@ -135,12 +135,14 @@ function fightSlime() {
 }
 
 function fightBeast() {
-
-}
-
-function fightDragon() {
-  console.log("Fighting dragon.");
-}
+  fighting = 1;
+  goFight();
+ }
+ 
+ function fightDragon() {
+   fighting = 2;
+   goFight();
+ }
 
 function goFight() {
   fighting = 0;
