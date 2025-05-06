@@ -172,6 +172,14 @@ function attack() {
     defeatMonster()
   };
 };
+
 function dodge() {
+
+};
+
+function defeatMonster() {
+
+};
+function lose() {
 
 };
