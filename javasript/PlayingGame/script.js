@@ -249,3 +249,15 @@ function restart() {
 function easterEgg() {
   update(locations[7]);
 }
+
+function pick(guess) {
+  
+}
+
+function pickTwo() {
+  pick(2);
+ }
+ 
+ function pickEight() {
+   pick(8);
+ }
