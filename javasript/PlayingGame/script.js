@@ -198,8 +198,10 @@ function attack() {
       defeatMonster();
     }
   }
-}
+ if (Math.random() <= .1) {
 
+ }
+}
 function isMonsterHit() {
   return Math.random() > .2 || health < 20;
 }
