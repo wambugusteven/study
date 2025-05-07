@@ -61,10 +61,10 @@ const locations = [
   {
     name: "fight",
     "button text": ["Attack", "Dodge", "Run"],
-   "button functions": [attack, dodge, goTown],
-   text: "You are fighting a monster."
-   },
-   {
+    "button functions": [attack, dodge, goTown],
+    text: "You are fighting a monster."
+  },
+  {
     name: "kill monster",
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, goTown],
@@ -76,11 +76,11 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;"
   },
-  {
-    name: "win",
-    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
-    "button functions": [restart, restart, restart],
-    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
+  { 
+    name: "win", 
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
+    "button functions": [restart, restart, restart], 
+    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;" 
   }
 ];
 
@@ -157,23 +157,23 @@ function sellWeapon() {
 
 function fightSlime() {
   fighting = 0;
-  goFight()
+  goFight();
 }
 
 function fightBeast() {
   fighting = 1;
   goFight();
- }
- 
- function fightDragon() {
-   fighting = 2;
-   goFight();
- }
+}
+
+function fightDragon() {
+  fighting = 2;
+  goFight();
+}
 
 function goFight() {
   update(locations[3]);
   monsterHealth = monsters[fighting].health;
-  monsterStats.style.display = 'block';
+  monsterStats.style.display = "block";
   monsterName.innerText = monsters[fighting].name;
   monsterHealthText.innerText = monsterHealth;
 }
@@ -198,23 +198,25 @@ function attack() {
       defeatMonster();
     }
   }
- if (Math.random() <= .1) {
-  text.innerText += " Your " + inventory.pop() + " breaks.";
- }
-}
-function isMonsterHit() {
-  return Math.random() > .2 || health < 20;
+  if (Math.random() <= .1) {
+    text.innerText += " Your " + inventory.pop() + " breaks.";
+    currentWeaponIndex--;
+  }
 }
 
 function getMonsterAttackValue(level) {
   const hit = (level * 5) - (Math.floor(Math.random() * xp));
   console.log(hit);
   return hit > 0 ? hit : 0;
-};
+}
+
+function isMonsterHit() {
+  return Math.random() > .2 || health < 20;
+}
 
 function dodge() {
   text.innerText = "You dodge the attack from the " + monsters[fighting].name;
-};
+}
 
 function defeatMonster() {
   gold += Math.floor(monsters[fighting].level * 6.7);
@@ -222,10 +224,12 @@ function defeatMonster() {
   goldText.innerText = gold;
   xpText.innerText = xp;
   update(locations[4]);
-};
+}
+
 function lose() {
   update(locations[5]);
-};
+}
+
 function winGame() {
   update(locations[6]);
 }
@@ -240,4 +244,4 @@ function restart() {
   healthText.innerText = health;
   xpText.innerText = xp;
   goTown();
- };
+}
