@@ -4,3 +4,5 @@ function getRandomIndex() {
     console.log(Math.floor(darkColorsArr.length * (Math.random())))
   }
   getRandomIndex();
+
+  const body = document.querySelector("body");
