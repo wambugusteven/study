@@ -13,4 +13,6 @@ function cleanInputString(str) {
     return str.replace(regex, '');
   }
   
- 
+  function isInvalidInput(str) {
+    const regex = /e/i;
+  };
