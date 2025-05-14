@@ -87,18 +87,6 @@ let userData = {
      songCurrentTime: 0,
 };
 
-const printGreeting = () => {
-  console.log("Hello there!")
+const renderSongs = (array) => {
+
 }
-printGreeting();
-
-const printMessage = org => {
-  console.log(`${org} is awesome!`);
-}
-
-printMessage('freeCodeCamp');
-
-
-const addTwoNumbers = (num1, num2) => num1 + num2;
-
-console.log(addTwoNumbers(3, 4));
