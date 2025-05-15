@@ -79,7 +79,6 @@ const allSongs = [
 ];
 
 const audio = new Audio();
-
 let userData = {
   songs: [...allSongs],
   currentSong: null,
@@ -98,8 +97,9 @@ const playSong = (id) => {
   }
   userData.currentSong = song;
   playButton.classList.add("playing");
-   audio.play();
-}
+
+  audio.play();
+};
 
 const renderSongs = (array) => {
   const songsHTML = array
@@ -123,19 +123,22 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+playButton.addEventListener("click", () => {});
+
 const sortSongs = () => {
   userData?.songs.sort((a,b) => {
     if (a.title < b.title) {
-        return -1;
+      return -1;
     }
 
     if (a.title > b.title) {
       return 1;
     }
+
     return 0;
   });
 
-return userData?.songs;
+  return userData?.songs;
 };
 
 renderSongs(sortSongs());
