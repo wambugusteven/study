@@ -1,45 +1,118 @@
-.webpage {
-    background-color: blueviolet;
-    width: auto;
-    height: auto;
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-style: italic;
-    text-align: center;
-
-    display: block;
-    
-    
-}
+body {
+   font-family: sans-serif;
+   margin: 20px;
+   background-color: #f4f4f4; /* Light gray background */
+   color: #333; /* Dark gray text */
+   line-height: 1.6;
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Center content horizontally */
+ }
+ 
+ .container {
+   background-color: #fff; /* White container */
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   width: 80%;
+   max-width: 600px; /* Limit container width */
+   margin-top: 20px;
+   margin-bottom: 20px;
+   text-align: center; /* Center text within the container */
+ }
+ 
  h1 {
-    color: green;
-    background-color: aqua;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    border-radius: 25%;
-    margin-left: 50px;
-    border: 2px solid;
-    text-align: center;
+   color: #007bff; /* Blue heading */
+   background-color: #e9ecef; /* Light gray background for heading */
+   font-size: 2.5em;
+   padding: 15px;
+   border-radius: 8px;
+   margin-top: 0;
+   margin-bottom: 20px;
+   border: 1px solid #ccc;
  }
-
- body {
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
+ 
+ p {
+   margin-bottom: 15px;
  }
-
- tittle {
-    font-family: Impact, serif;
- } 
+ 
+ #p {
+   font-weight: bold;
+   color: #28a745; /* Green 강조 text */
+ }
+ 
  button {
-   color: indigo;
-   background-color: pink;
-   border-radius: 70%;
-   padding: 0.5%;
-   margin-bottom: -3.5rem;
+   background-color: #6c757d; /* Gray button */
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1em;
+   transition: background-color 0.3s ease;
+   margin-bottom: 15px;
+ }
+ 
+ button:hover {
+   background-color: #5a6268;
+ }
+ 
+ .webpage {
+   background-color: #d8bfd8; /* Light purple */
+   padding: 20px;
+   border-radius: 8px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   text-align: left; /* Align text within the links to the left */
+   width: 100%; /* Make the purple box fill the container width */
+   font-size: 1em; /* Reset font size */
+   font-style: normal; /* Reset font style */
+ }
+ 
+ .webpage p {
+   margin: 10px 0;
+ }
+ 
+ .webpage a {
+   color: #007bff;
+   text-decoration: none;
+   font-weight: bold;
+ }
+ 
+ .webpage a:hover {
+   text-decoration: underline;
+ }
+ 
+ .study,
+ .about,
+ .resume,
+ .html,
+ .cs,
+ .java,
+ .projects,
+ .portfolio {
+   margin-bottom: 10px;
+ }
+ 
+ details {
+   margin-top: 20px;
+   border: 1px solid #ccc;
+   padding: 15px;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+   text-align: left;
+ }
+ 
+ summary {
+   font-weight: bold;
+   cursor: pointer;
+   margin-bottom: 10px;
+ }
+ 
+ details div {
+   margin-bottom: 5px;
+ }
+ 
+ details address {
+   font-style: normal;
  }

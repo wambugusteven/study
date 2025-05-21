@@ -7,8 +7,8 @@
 <body>
   <h1>Welcome</h1>
   <P>This is my first website. Hope you like it!</P>
-
-  <button onclick="myFunction()">Note:</button>
+  <p id="p"> Kindly! </p>
+  <button onclick="myFunction()">Note:</button> that.
   <div class="webpage">
     <div class="study">
     <p>Go to my study.html <a href="/study.html"> study page</a>
@@ -62,11 +62,11 @@
      Steven Wambugu Nyambura 🗼
     </div>
     <div>
-      Email: stevenwambugu@proton.me.
-      </div>
-      <div>
-      Tell: 0714929003 /0719170288.
+      Email: <a href="mailto:stevenwambugu@proton.me.">
+        stevenwambugu@proton.me
+      </a>      
     </div>
+      
     <div>
       @nsw.steve97- instagram account.
     </div>
@@ -84,6 +84,8 @@
 function myFunction() {
   alert("Hey you!\nThis is wambugu's property 👩‍💻 keep off!");
 }
+document.getElementById('p').innerText = "Here we go!";
+
 </script>
 
 </html>
