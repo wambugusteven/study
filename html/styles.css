@@ -1,0 +1,22 @@
+body {
+  background-color: white;
+}
+.container {
+   background-color: bisque;
+   align-items: center;
+   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+    }   
+.nsw {
+  
+  width: 50%;
+  max-width: 350px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 30px;
+ background-color: darkgray;
+ text-align: center;
+}
