@@ -20,3 +20,11 @@ body {
  background-color: darkgray;
  text-align: center;
 }
+h1 {
+  text-align: center;
+  color: black;
+}
+.one {
+ color: black;
+ text-align: center;
+}
