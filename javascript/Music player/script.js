@@ -203,7 +203,9 @@ const renderSongs = (array) => {
 
   playlistSongs.innerHTML = songsHTML;
 
-  
+  if (userData?.songs.length === 0) {
+
+  } 
 
 };
 
