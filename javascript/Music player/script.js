@@ -213,7 +213,8 @@ const renderSongs = (array) => {
     playlistSongs.appendChild(resetButton);
 
     resetButton.addEventListener("click", () => {
-  
+      userData.songs = [...allSongs];
+
     });
 
   }
