@@ -220,6 +220,10 @@ audio.addEventListener("ended", () => {
   const currentSongIndex = getCurrentSongIndex();
   const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
 
+  if (nextSongExists) {
+    playNextSong();
+  }
+
 });
 
 const sortSongs = () => {
