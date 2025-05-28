@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <h1 id="title"> Personal Survey Form
+  </h1>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <p id="description">
+   We value your input and would love to hear from you. Feel free to share your thoughts!
+    </p>
+    <fieldset>
+    <form id="survey-form">
+     <fieldset>
+        <label>Name:
+      <input type="text" id="name" required placeholder="Enter your name here....."/>
+      </label> 
+      </fieldset>
+      <fieldset>
+         <label>Email:
+        <input type="email" id="email" required placeholder="Enter your email here..." />
+      </label>
+      </fieldset>
+      <fieldset>
+         <label>Age(years):
+        <input type="number" id="number" min="16" max="100"    placeholder="Enter your age here..." required/>
+      </label>
+      </fieldset>
+      <fieldset>
+          <legend> Gender</legend>
+          <label> Male:
+          <input type="radio" name="gender" value="1" checked/>
+        </label>
+        <label>Female:
+                   <input type="radio"  value="2" name="gender"/>
+        </label>
+        <label>Others:
+                   <input type="radio" value="3" name="gender"/>
+        </label>
+      </fieldset>
+        <fieldset>
+        <label>Add your bio...
+        <textarea placeholder="Add your bio here..." required></textarea>
+        </label>
+      </fieldset>  
+       <fieldset>
+        <label id="name-label">Your Profile picture: 
+        <div>  <input type="file"/></div>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Your Hobbies: 
+          <div>
+            <input >
+          </div>
+        </label>
+      </fieldset>
+       <fieldset>
+        <label id="email-label">Wich football team do you suppert?
+          <div>
+          <input/>
+          </div>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Questions you should be ready to answer before starting the coding process:
+          <select id="dropdown">
+            <option value="">Which programming languages or technologies interest me the most?</option>
+            <option value="1">Why am I interested in learning to code?</option>
+            <option value="2">How much time can I realistically dedicate to learning?</option>
+            <option value="3">What is my learning style?</option>
+            <option value="4">Am I ready to ask for help when needed?</option>
+            <option value="5">How will I measure my progress?</option>
+            <option value="6">How will I apply what I learn?</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+      Starting FreeCodeCamp is an exciting journey! Istn't?
+        </label>
+        <div>
+        <label>Yes
+          <input type="radio" checked name="yes-no" value="2" required/>
+        </label>
+        </div>
+        <div>
+        <label>No
+          <input type="radio" name="yes-no" value="2"/>
+        </label>
+        </div>
+      </fieldset>
+     
+   <fieldset>
+        <label>Taking a moment to leave a comment means a lot to us, and your voice truly makes a difference. Thank you for being part of our journey!
+        <textarea placeholder="Please note down yuor comment here...."></textarea>
+        </label>
+      </fieldset>   
+           <label>
+        <input type="Submit" id="submit"/>
+      </label>
+      <footer>Thanks for taking your time to read and answer our form.Thank you!</footer>
+      <footer>😄</footer>
+      </form>
+      </fieldset>
+      </body>
+</html>  
