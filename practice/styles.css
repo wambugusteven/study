@@ -23,7 +23,15 @@ body {
     display: flex;
     justify-content: left;
   }
- 
+  
+  input {
+    background-color: white;
+    width: 500px;
+    height: 25px;
+  }
+  textarea {
+    width: 500px;
+  }
 
   /* section with a class of about*/
   .about {
