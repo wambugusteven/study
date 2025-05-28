@@ -67,5 +67,29 @@ body {
     
    }
    
+/* project section */
+.project {
+    position: absolute;
+    top: 60rem;
+    right: 30px;
+    background-color: burlywood;
+    width: 95%;
+    height: 20rem;
+    border-radius: 30px;
+}
 
+.projectcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
+.projectdiv {
+    background-color: cadetblue;
+    border-radius: 30px;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+}
