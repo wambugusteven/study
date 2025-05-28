@@ -93,3 +93,15 @@ body {
     width: 15rem;
     text-align: center;
 }
+
+/* contact section */
+.contactSection {
+    position: absolute;
+    top: 85rem;
+    right: 30px;
+    background-color: darkcyan;
+    border-radius: 30px;
+    width: 95%;
+    height: 300px;
+    text-align: center;
+}
