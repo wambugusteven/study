@@ -33,6 +33,27 @@ body {
   textarea {
     width: 500px;
   }
+  
+  .btn {
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    top: 20rem;
+    right: 19rem;
+  }
+  .button {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-style: inherit;
+    padding: 20px;
+    width: 300px;
+    border-radius: 40px;
+  }
+  .button:hover {
+    color: greenyellow;
+    background-color: gold;
+  }
 
   /* webpage cover */
 .portfolio {
