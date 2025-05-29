@@ -61,8 +61,8 @@ body {
   .projectdiv:hover {
      background-color: cadetblue;
      color: black;
-     height: 15rem;
-     width: 17rem;
+     height: 13rem;
+     width: 18rem;
      padding: 5px;
   }
 
@@ -183,7 +183,7 @@ body {
 .projectdiv {
     background-color: dimgray;
     border-radius: 30px;
-    height: 15rem;
+    height: 10rem;
     width: 15rem;
     text-align: center;
     margin-top: 0;
