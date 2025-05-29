@@ -66,6 +66,13 @@ body {
      padding: 5px;
   }
 
+  h1, h2, h3, h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: monospace;
+  }
+
   h5 {
     text-align: center;
     font-size: 50px;
@@ -179,6 +186,8 @@ body {
     height: 15rem;
     width: 15rem;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 /* contact section */
@@ -191,4 +200,5 @@ body {
     width: 95%;
     height: 300px;
     text-align: center;
+    margin: 0;
 }
