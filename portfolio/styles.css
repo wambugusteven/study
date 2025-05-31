@@ -1,14 +1,16 @@
-body {
+
+
+.body {
     
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-style: oblique;
-    background-color: darkgray;
+    background-color: black;
 }
 
 .header {
     border-radius: 13px;
-    background-color: rgba(143, 167, 167, 0.911);
+    background-color: grey;
     height: 65px;
     width: 100%;
     position: fixed;
@@ -111,7 +113,7 @@ body {
 
   /* webpage cover */
 .portfolio {
-    background-color: blueviolet;
+    background-image: black;
     border-radius: 7px;
     position: absolute;
     right: 0;
@@ -195,7 +197,7 @@ body {
     position: absolute;
     top: 101rem;
     right: 30px;
-    background-color: darkcyan;
+    background-color: darkgray;
     border-radius: 30px;
     width: 95%;
     height: 300px;
