@@ -199,7 +199,11 @@ const setPlayerCards = (arr = players) => {
 
 };
 
-playersDropdownList.addEventListener("change",() => {
-
+playersDropdownList.addEventListener("change",(e) => {
+    playerCards.innerHTML = "";
+    switch (e.target.value) {
+    
+    }
 }
+
 );
