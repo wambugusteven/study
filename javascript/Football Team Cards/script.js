@@ -174,5 +174,6 @@ const myFavoriteFootballTeam = {
     Object.freeze(myFavoriteFootballTeam);
 
 
-    const { sport, team } = myFavoriteFootballTeam;
+    const { sport, team, year, players } = myFavoriteFootballTeam;
+    const {coachName} = myFavoriteFootballTeam.headCoach;
     
