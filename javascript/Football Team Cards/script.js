@@ -176,4 +176,8 @@ const myFavoriteFootballTeam = {
 
     const { sport, team, year, players } = myFavoriteFootballTeam;
     const {coachName} = myFavoriteFootballTeam.headCoach;
+    typeOfSport.textContent = sport;
+    teamName.textContent = team;
+    worldCupYear.textContent = year;
+    headCoach.textContent = coachName;
     
