@@ -8,6 +8,8 @@ const checkUserInput = () => {
     isNaN(parseInt(numberInput.value)) ||
     parseInt(numberInput.value) < 0
   ) {
+    window.alert();
+  alert("Please provide a decimal number greater than or equal to 0");
 
   }
 
