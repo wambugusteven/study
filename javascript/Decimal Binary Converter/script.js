@@ -7,7 +7,7 @@ const decimalToBinary = (input) => {
   result.innerText = binary; 
 
   while (input > 0) {
-    input = 0;
+    input = Math.floor(input / 2);
   }
 };
 
