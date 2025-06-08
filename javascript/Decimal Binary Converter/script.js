@@ -3,7 +3,7 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-
+    return "1010";
 };
 
 const checkUserInput = () => {
@@ -14,11 +14,10 @@ const checkUserInput = () => {
   ) {
     alert("Please provide a decimal number greater than or equal to 0");
     return;
-
   }
 
   decimalToBinary(parseInt(numberInput.value));
-  numberInput.value = ``;
+  numberInput.value = "";
 };
 
 convertBtn.addEventListener("click", checkUserInput);
