@@ -10,7 +10,11 @@ const decimalToBinary = (input) => {
   }
 };
 
-const showAnimation = () => {};
+const showAnimation = () => {
+  if (parseInt(numberInput.value) === 5) {
+
+  };
+};
 
 const checkUserInput = () => {
   if (
