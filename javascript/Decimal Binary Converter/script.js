@@ -11,10 +11,15 @@ const decimalToBinary = (input) => {
 };
 
 const showAnimation = () => {
-  console.log("free");
   setTimeout(() => {
-    console.log("Code");
+    console.log("Steven");
+  }, 500);
+  setTimeout(() => {
+    console.log("Wambugu");
  }, 1000);
+ setTimeout(() => {
+  console.log("Nyambura");
+}, 1500);
 };
 
 const checkUserInput = () => {
