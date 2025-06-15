@@ -11,5 +11,10 @@ const appendOperator = (operator) => {
 }
 
 const logic = () => {
-    
+
 }
+
+const clearResults = () => {
+  currentExpression = '';
+  document.getElementById('results').value = currentExpression;
+} 
