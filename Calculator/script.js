@@ -9,3 +9,7 @@ const appendOperator = (operator) => {
     currentExpression += ` ${'operator'} `;
     document.getElementById("results").value = currentExpression;
 }
+
+const logic = () => {
+    
+}
