@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: black;
 }
 .container {
    background-color: bisque;
@@ -10,21 +10,16 @@ body {
   justify-content: center;
   gap: 16px;
     }   
+
 .nsw {
-  
-  width: 50%;
-  max-width: 350px;
-  height: 70px;
   object-fit: cover;
   border-radius: 30px;
  background-color: darkgray;
  text-align: center;
+ width: 515px;
+ height: 115px;
 }
 h1 {
   text-align: center;
-  color: black;
-}
-.one {
- color: black;
- text-align: center;
+  color: white;
 }
