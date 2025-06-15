@@ -1,6 +1,4 @@
-body {
-    background-color: darkgrey;
-}
+
 
 h1 {
     background-color: azure;
@@ -9,7 +7,7 @@ h1 {
     
 }
 
-main {
+body {
     background-color: darkgray;
     position: absolute;
     right: 450px;
@@ -20,7 +18,7 @@ main {
     gap: 30px;
 }
 
-.container {
+.calcontainer {
     text-align: center;
     background-color: aqua;
     border-radius: 15px;
@@ -39,6 +37,12 @@ main {
     height: 90px;
     width: 300px;
     border-radius: 7px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
 .number-btn {
