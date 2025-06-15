@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 310px;
+    width: 410px;
 
 }
 .display-scr {
@@ -45,19 +45,8 @@ body {
     gap: 15px;
 }
 
-.number-btn {
-  border-radius: 5px;
-  background-color: yellow;
-  color: black;
-  text-align: center;
-  font-size: large;
-  height: 50px;
-  width: 70px;
-  cursor: pointer;
-  padding: 10px;
-}
 
-.number-btn-m2 {
+button {
     border-radius: 5px;
     background-color: rgb(0, 208, 255);
     color: black;
@@ -69,10 +58,3 @@ body {
     padding: 10px;
 }
 
-.btn {
-    border-radius: 5px;
-    background-color: green;
-    text-align: center;
-    height: 50px;
-    width: 100px;
-}
