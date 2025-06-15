@@ -1,29 +1,29 @@
 body {
    font-family: sans-serif;
    margin: 20px;
-   background-color: #f4f4f4; /* Light gray background */
-   color: #333; /* Dark gray text */
+   background-color: #f4f4f4; 
+   color: #333; 
    line-height: 1.6;
    display: flex;
    flex-direction: column;
-   align-items: center; /* Center content horizontally */
+   align-items: center; 
  }
  
- .container {
-   background-color: #fff; /* White container */
+ .carrier {
+   background-color: #fff; 
    padding: 30px;
    border-radius: 8px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   width: 80%;
-   max-width: 600px; /* Limit container width */
-   margin-top: 20px;
-   margin-bottom: 20px;
-   text-align: center; /* Center text within the container */
+   
+   text-align: center; 
+
+   height: 115px;
+   width: 515px;
  }
  
  h1 {
-   color: #007bff; /* Blue heading */
-   background-color: #e9ecef; /* Light gray background for heading */
+   color: #007bff; 
+   background-color: #e9ecef; 
    font-size: 2.5em;
    padding: 15px;
    border-radius: 8px;
@@ -38,35 +38,24 @@ body {
  
  #p {
    font-weight: bold;
-   color: #28a745; /* Green 강조 text */
- }
- 
- button {
-   background-color: #6c757d; /* Gray button */
-   color: white;
-   border: none;
-   padding: 10px 20px;
-   border-radius: 5px;
-   cursor: pointer;
-   font-size: 1em;
-   transition: background-color 0.3s ease;
-   margin-bottom: 15px;
- }
- 
- button:hover {
-   background-color: #5a6268;
+   color: #28a745; 
  }
  
  .webpage {
-   background-color: #d8bfd8; /* Light purple */
+   background-color: #d8bfd8; 
    padding: 20px;
    border-radius: 8px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   text-align: left; /* Align text within the links to the left */
-   width: 100%; /* Make the purple box fill the container width */
-   font-size: 1em; /* Reset font size */
-   font-style: normal; /* Reset font style */
+   
+   text-align: left; 
+   width: 100%; 
+   font-size: 1em; 
+   font-style: normal; 
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   
  }
  
  .webpage p {
