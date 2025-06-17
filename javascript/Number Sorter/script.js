@@ -49,7 +49,7 @@ const selectionSort = (array) => {
     array[minIndex] = temp;
   }
 
-
+  return array;
 }
 
 sortButton.addEventListener("click", sortInputArray);
