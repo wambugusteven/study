@@ -9,7 +9,6 @@ const sortInputArray = (event) => {
 
   const sortedValues = insertionSort(inputValues);
 
-
   updateUI(sortedValues);
 }
 
@@ -58,10 +57,12 @@ const insertionSort = (array) => {
     let j = i - 1;
 
     while (j >= 0 && array[j] > currValue) {
-
+      array[j + 1] = array[j];
       j--;
     }
+    array[j + 1] = currValue;
   }
+
 }
 
 sortButton.addEventListener("click", sortInputArray);
