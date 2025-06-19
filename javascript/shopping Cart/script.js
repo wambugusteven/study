@@ -100,3 +100,7 @@ products.forEach(
         `;
     }
 )
+
+class ShoppingCart {
+
+};
