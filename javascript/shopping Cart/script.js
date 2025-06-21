@@ -145,3 +145,4 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
   }
 );
 
+cartBtn.addEventListener("click", () => {})
