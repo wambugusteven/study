@@ -192,3 +192,5 @@ cartBtn.addEventListener("click", () => {
   cartContainer.style.display = isCartShowing ? "block" : "none";
 });
 
+
+clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
