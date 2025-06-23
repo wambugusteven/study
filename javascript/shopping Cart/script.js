@@ -142,12 +142,19 @@ class ShoppingCart {
       alert("Your shopping cart is already empty");
       return;
     }
-    const isCartCleared = confirm("Are you sure you want to clear all items from your shopping cart?");
+
+    const isCartCleared = confirm(
+      "Are you sure you want to clear all items from your shopping cart?"
+    );
 
     if (isCartCleared) {
       this.items = [];
       this.total = 0;
       productsContainer.innerHTML = "";
+      totalNumberOfItems.textContent = 0;
+      cartSubTotal.textContent = 0;
+      cartTaxes.textContent = 0;
+      cartTotal.textContent = 0;
     }
   }
 
@@ -162,7 +169,6 @@ class ShoppingCart {
     cartSubTotal.textContent = `$${subTotal.toFixed(2)}`;
     cartTaxes.textContent = `$${tax.toFixed(2)}`;
     cartTotal.textContent = `$${this.total.toFixed(2)}`;
-     
     return this.total;
   }
 };
@@ -185,3 +191,4 @@ cartBtn.addEventListener("click", () => {
   showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
   cartContainer.style.display = isCartShowing ? "block" : "none";
 });
+
