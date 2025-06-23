@@ -143,6 +143,12 @@ class ShoppingCart {
       return;
     }
     const isCartCleared = confirm("Are you sure you want to clear all items from your shopping cart?");
+
+    if (isCartCleared) {
+      this.items = [];
+      this.total = 0;
+
+    }
   }
 
   calculateTaxes(amount) {
