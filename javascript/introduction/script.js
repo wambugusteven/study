@@ -1,3 +1,5 @@
+const container = document.getElementById("container");
+
 const character = "!";
 const count = 10;
 const rows = [];
@@ -23,5 +25,3 @@ let result = ""
 for (const row of rows) {
   result = result + row + "\n";
 }
-
-console.log(result);
