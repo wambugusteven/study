@@ -33,9 +33,12 @@ const getRange = (array) => {
 const getVariance = (array) => {
   const mean = getMean(array);
   const variance = array.reduce((acc, el) => {
-
-  }, 0);
-}
+    const difference = el - mean;
+     const squared = difference ** 2;
+     return acc + squared;
+    }, 0) / array.length;
+    return variance;
+  }
 
 const calculate = () => {
   const value = document.querySelector("#numbers").value;
