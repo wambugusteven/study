@@ -33,7 +33,6 @@ window.onload = () => {
     };
     const letters = charRange("A", "J");
     letters.forEach(createLabel);
-
     range(1, 99).forEach((number) => {});
     createLabel(number);
     letters.forEach(letter => {
@@ -42,5 +41,11 @@ window.onload = () => {
       input.id = letter + number;
       input.ariaLabel = input.id;
       container.appendChild(input);
+      input.onchange = update;
   })
 }
+
+const update = (event) => {
+  const element = event.target;
+  const value = element.value.replace(/\s/g, "");
+};
