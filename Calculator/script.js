@@ -27,14 +27,12 @@ const deleteInput = () => {
   document.getElementById("results").value = currentExpression
 }
 
-const logic = (calculations) => {
-   if (number === 0) {
-    return '0';
-   } else {
-    
-   }
-    document.getElementById('results').value = currentExpression;
-}
+ equal.addEventListener("click", () => {
+  currentExpression = eval(currentExpression.replace('÷', '/').replace('×', '*'));
+  document.getElementById('results').value = currentExpression;
+
+ })
+  
 
 const clearResults = () => {
   currentExpression = '';
