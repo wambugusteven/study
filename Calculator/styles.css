@@ -27,12 +27,17 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: 410px;
+    padding: 20px;
 
+}
+.cal-title {
+    padding: 5px;
+    border-radius: 10px;
 }
 .display-scr {
     background-color: aliceblue;
-    color: black;
-    font-size: larger;
+    color: rgb(92, 88, 88);
+    font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 90px;
     width: 350px;
