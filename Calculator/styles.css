@@ -13,7 +13,7 @@ body {
     right: 450px;
     top: 100px;
     height: 495px;
-    width: 360px;
+    width: 50%;
     border-radius: 20px;
     gap: 30px;
 }
@@ -28,6 +28,8 @@ body {
     flex-wrap: wrap;
     width: 410px;
     padding: 20px;
+
+    
 
 }
 .cal-title {
