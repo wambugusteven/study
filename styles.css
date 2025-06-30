@@ -7,18 +7,25 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center; 
+   gap: 20px;
  }
  
  .carrier {
-   background-color: #fff; 
+   background-color: #49535d; 
    padding: 30px;
-   border-radius: 8px;
+   border-radius: 25px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   
    text-align: center; 
+   height: 215px;
+   width: 900px;
+ }
 
-   height: 115px;
-   width: 515px;
+ section:hover{ 
+  height: 250px;
+  width: 1000px;
+  background-color: #406d9b; 
+   padding: 30px;
+   border-radius: 25px;
  }
  
  h1 {
@@ -41,6 +48,7 @@ body {
    color: #28a745; 
  }
  
+ /*
  .webpage {
    background-color: #d8bfd8; 
    padding: 20px;
@@ -57,18 +65,19 @@ body {
    gap: 20px;
    
  }
+   */
  
- .webpage p {
+ p {
    margin: 10px 0;
  }
  
- .webpage a {
+ a {
    color: #007bff;
    text-decoration: none;
    font-weight: bold;
  }
  
- .webpage a:hover {
+a:hover {
    text-decoration: underline;
  }
  
