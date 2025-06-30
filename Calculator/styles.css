@@ -9,11 +9,9 @@ h1 {
 
 body {
     background-color: darkgray;
-    position: absolute;
-    right: 450px;
-    top: 100px;
+   
     height: 495px;
-    width: 50%;
+    width: 28%;
     border-radius: 20px;
     gap: 30px;
 }
@@ -29,7 +27,9 @@ body {
     width: 410px;
     padding: 20px;
 
-    
+    position: absolute;
+    right: 450px;
+    top: 100px;
 
 }
 .cal-title {
