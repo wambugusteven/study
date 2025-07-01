@@ -1,5 +1,4 @@
 const isEven = num => num % 2 === 0;
-
 const sum = nums => nums.reduce((acc, el) => acc + el, 0);
 const average = nums => sum(nums) / nums.length;
 
@@ -18,9 +17,8 @@ const spreadsheetFunctions = {
   median
 }
 
-const range = (start, end) =>  Array(end - start + 1).fill(start).map((element, index) => element + index);;
-
-const charRange = (start, end) =>  range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
+const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);
+const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));
 
 const evalFormula = (x, cells) => {
   const idToText = id => cells.find(cell => cell.id === id).value;
@@ -28,36 +26,37 @@ const evalFormula = (x, cells) => {
   const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));
   const elemValue = num => character => idToText(character + num);
   const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));
-  const rangeExpanded = x.replace(rangeRegex, (match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters));
+  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));
+
 }
 
 window.onload = () => {
-    const container = document.getElementById("container");
-      
-    const createLabel = (name) => {
-        const label = document.createElement("div");
-        label.className = "label";
-        label.textContent = name;
-        container.appendChild(label);
-    };
-    const letters = charRange("A", "J");
-    letters.forEach(createLabel);
-    range(1, 99).forEach((number) => {});
+  const container = document.getElementById("container");
+  const createLabel = (name) => {
+    const label = document.createElement("div");
+    label.className = "label";
+    label.textContent = name;
+    container.appendChild(label);
+  }
+  const letters = charRange("A", "J");
+  letters.forEach(createLabel);
+  range(1, 99).forEach(number => {
     createLabel(number);
     letters.forEach(letter => {
-      const input = document.createElement("input").textContent = "text";
+      const input = document.createElement("input");
       input.type = "text";
       input.id = letter + number;
-      input.ariaLabel = input.id;
-      container.appendChild(input);
+      input.ariaLabel = letter + number;
       input.onchange = update;
+      container.appendChild(input);
+    })
   })
 }
 
-const update = (event) => {
+const update = event => {
   const element = event.target;
   const value = element.value.replace(/\s/g, "");
   if (!value.includes(element.id) && value.startsWith('=')) {
 
   }
-};
+}

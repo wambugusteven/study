@@ -22,18 +22,13 @@ body {
    border-radius: 15%;
  }
 
-section {
- 
- border-radius: 55%;
-}
-
  section:hover{ 
   height: 250px;
   width: 1000px; 
    padding: 30px;
-   border-radius: 25px;
+   border-radius: 105px;
    border-style: dashed;
-   border-radius: 55%;
+   border-radius: 40%;
  }
  
  h1 {
