@@ -1,7 +1,7 @@
 body {
    font-family: sans-serif;
    margin: 20px;
-   background-color: lightslategrey;
+   background-color: black;
    color: #333; 
    line-height: 1.6;
    display: flex;
@@ -11,21 +11,29 @@ body {
  }
  
  .carrier {
-   background-color: #49535d; 
+   background-color: black; 
    padding: 30px;
-   border-radius: 25px;
+   border-radius: 105px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    text-align: center; 
    height: 215px;
    width: 900px;
+   border-style: groove;
+   border-radius: 15%;
  }
+
+section {
+ 
+ border-radius: 55%;
+}
 
  section:hover{ 
   height: 250px;
-  width: 1000px;
-  background-color: #406d9b; 
+  width: 1000px; 
    padding: 30px;
    border-radius: 25px;
+   border-style: dashed;
+   border-radius: 55%;
  }
  
  h1 {
