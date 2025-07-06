@@ -27,4 +27,7 @@ class Player {
         this.width = proportionalSize(40);
         this.height = proportionalSize(40);
     }
+    draw() {
+
+    }
 }
