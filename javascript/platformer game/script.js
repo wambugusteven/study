@@ -39,7 +39,11 @@ class Player {
             if (this.position.y < 0) {
                 this.position.y = 0;
                 this.velocity.y = gravity;
-            };
-        }
+            }
+            this.velocity.y += gravity;
+          } else {
+            this.velocity.y = 0;
+          }
+      
     }
 }
