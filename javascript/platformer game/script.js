@@ -78,14 +78,22 @@ class CheckPoint {
       y,
     };
     this.width = proportionalSize(40);
-  this.height = proportionalSize(70);
-  this.claimed = false;
+    this.height = proportionalSize(70);
+    this.claimed = false;
   };
+
   draw() {
     ctx.fillStyle = "#f1be32";
     ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
+  claim() {
+    this.width = 0;
+    this.height = 0;
+    this.position.y = Infinity;
+    this.claimed = true;
+  }
 };
+
 
 const player = new Player();
 
@@ -107,6 +115,8 @@ const platformPositions = [
 const platforms = platformPositions.map(
   (platform) => new Platform(platform.x, platform.y)
 );
+
+
 
 const animate = () => {
   requestAnimationFrame(animate);
@@ -135,7 +145,7 @@ const animate = () => {
       });
     }
   }
- 
+
   platforms.forEach((platform) => {
     const collisionDetectionRules = [
       player.position.y + player.height <= platform.position.y,
@@ -148,21 +158,21 @@ const animate = () => {
     if (collisionDetectionRules.every((rule) => rule)) {
       player.velocity.y = 0;
       return;
-   }
+    }
 
-   const platformDetectionRules = [
-    player.position.x >= platform.position.x - player.width / 2,
-    player.position.x <= platform.position.x + platform.width - player.width / 3,
-    player.position.y + player.height >= platform.position.y,
+    const platformDetectionRules = [
+      player.position.x >= platform.position.x - player.width / 2,
+      player.position.x <=
+        platform.position.x + platform.width - player.width / 3,
+      player.position.y + player.height >= platform.position.y,
       player.position.y <= platform.position.y + platform.height,
-   ];
+    ];
 
-   if (platformDetectionRules.every(rule => rule)) {
-    player.position.y = platform.position.y + player.height;
-    player.velocity.y = gravity;
-   };
- });
-
+    if (platformDetectionRules.every(rule => rule)) {
+      player.position.y = platform.position.y + player.height;
+      player.velocity.y = gravity;
+    };
+  });
 }
 
 
