@@ -94,6 +94,7 @@ class CheckPoint {
   }
 };
 
+
 const player = new Player();
 
 const platformPositions = [
@@ -114,6 +115,8 @@ const platformPositions = [
 const platforms = platformPositions.map(
   (platform) => new Platform(platform.x, platform.y)
 );
+
+
 
 const checkpointPositions = [
   { x: 1170, y: proportionalSize(80), z: 1 },
@@ -151,11 +154,16 @@ const animate = () => {
         platform.position.x -= 5;
       });
 
-
+      checkpoints.forEach((checkpoint) => {
+        checkpoint.position.x -= 5;
+      });
+    
     } else if (keys.leftKey.pressed && isCheckpointCollisionDetectionActive) {
       platforms.forEach((platform) => {
         platform.position.x += 5;
       });
+
+
     }
   }
 
@@ -242,4 +250,3 @@ window.addEventListener("keydown", ({ key }) => {
 window.addEventListener("keyup", ({ key }) => {
   movePlayer(key, 0, false);
 });
-
