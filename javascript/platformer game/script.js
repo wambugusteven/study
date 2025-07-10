@@ -242,6 +242,11 @@ const startGame = () => {
   startScreen.style.display = "none";
   animate();
 }
+  
+const showCheckpointScreen = (msg) => {
+  checkpointScreen.style.display = "block";
+  checkpointMessage.textContent = msg;
+};
 
 startBtn.addEventListener("click", startGame);
 
