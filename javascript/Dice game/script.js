@@ -31,13 +31,13 @@ const rollDice = () => {
 
 const updateStats = () => {
   rollsElement.textContent = rolls;
-   roundElement.textContent = round;
- };
+  roundElement.textContent = round;
+};
 
- const updateRadioOption = (index, score) => {
+const updateRadioOption = (index, score) => {
   scoreInputs[index].disabled = false;
- scoreInputs[index].value = score;
- scoreSpans[index].textContent = `, score = ${score}`;
+  scoreInputs[index].value = score;
+  scoreSpans[index].textContent = `, score = ${score}`;
 };
 
 const updateScore = (selectedValue, achieved) => {
@@ -96,47 +96,53 @@ const resetRadioOptions = () => {
 
 rollDiceBtn.addEventListener("click", () => {
   if (rolls === 3) {
-    alert("You have made three rolls this round. Please select a score")
+    alert("You have made three rolls this round. Please select a score.");
   } else {
     rolls++;
+    resetRadioOptions();
     rollDice();
     updateStats();
-    getHighestDuplicates();
-  };
+    getHighestDuplicates(diceValuesArr);
+  }
 });
 
 rulesBtn.addEventListener("click", () => {
-    isModalShowing = !isModalShowing;
-  
-    if (isModalShowing) {
-      rulesBtn.textContent = "Hide rules";
-      rulesContainer.style.display = "block";
-    } else {
-      rulesBtn.textContent = "Show rules";
-      rulesContainer.style.display = "none";
-    }
-  });
+  isModalShowing = !isModalShowing;
 
-  keepScoreBtn.addEventListener("click", () => {
-    let selectedValue;
-    let achieved;
-  
-    for (const radioButton of scoreInputs) {
-      if (radioButton.checked) {
-        selectedValue = radioButton.value;
-        achieved = radioButton.id;
-        break;
-      }
+  if (isModalShowing) {
+    rulesBtn.textContent = "Hide rules";
+    rulesContainer.style.display = "block";
+  } else {
+    rulesBtn.textContent = "Show rules";
+    rulesContainer.style.display = "none";
+  }
+});
+
+keepScoreBtn.addEventListener("click", () => {
+  let selectedValue;
+  let achieved;
+
+  for (const radioButton of scoreInputs) {
+    if (radioButton.checked) {
+      selectedValue = radioButton.value;
+      achieved = radioButton.id;
+      break;
     }
-  
-    if (selectedValue) {
-      rolls = 0;
-      round++;
-      updateStats();
-      resetRadioOptions();
-      updateScore(selectedValue, achieved);
-      
-    } else {
-      alert("Please select an option or roll the dice");
+  }
+
+  if (selectedValue) {
+    rolls = 0;
+    round++;
+    updateStats();
+    resetRadioOptions();
+    updateScore(selectedValue, achieved);
+    if (round > 6) {
+      setTimeout(() => {
+        alert(`Game Over! Your total score is ${score}`);
+        
+      }, 500);
     }
-  });
+  } else {
+    alert("Please select an option or roll the dice");
+  }
+});
