@@ -33,3 +33,5 @@ fetch("https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json")
         `;
       });
   };
+
+  loadMoreBtn.addEventListener("click", fetchMoreAuthors)
