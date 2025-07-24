@@ -27,6 +27,10 @@ const forumCategory = (id) => {
         selectedCategory.category = "General";
         selectedCategory.id = 1;
     }
+    const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
+    const linkText = selectedCategory.category;
+    const linkClass = `category ${selectedCategory.className}`;
+    return `<a href="${url}" ></a>`;
   };
 
 const timeAgo = (time) => {
