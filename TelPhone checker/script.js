@@ -7,10 +7,13 @@ const checkValidNumber = input => {
   if (input === '') {
     alert('Please provide a phone number');
     return;
-  }
+  };
 
-const countryCode = '^(254\\s?)?';
-const phoneNumber = /^(07|2547)[0-9]{8}$/ || /^(01|2541)[0-9]{8}$/;
+  const countryCode = '(254[\\s-]?)?';
+  const phoneNumber = '07|01\\d{8}';
+  const fullPattern = `^${countryCode}${phoneNumber}$`;
+  const phoneRegex = new RegExp(fullPattern);
+  
 
 const pText = document.createElement("p");
 pText.className = 'results-text';
@@ -22,7 +25,7 @@ phoneRegex.test(input)
           `${phoneRegex.test(input) ? 'Valid' : 'Invalid'} Kenyan number: ${input}`
         )
       );
-      resultsDiv.appendChild(pTag);
+      resultsDiv.appendChild(pText);
     };
     
   checkBtn.addEventListener('click', () => {
