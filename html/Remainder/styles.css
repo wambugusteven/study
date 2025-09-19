@@ -1,0 +1,20 @@
+body {
+    background-color: aqua;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px #0000;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.introduction {
+    font-size: small;
+    margin-bottom: 15px;
+    color: white;
+    background-color: chocolate;
+}
