@@ -37,4 +37,4 @@ const deleteInput = () => {
 const clearResults = () => {
   currentExpression = '';
   document.getElementById('results').value = currentExpression;
-} 
+}
