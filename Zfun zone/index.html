@@ -3,19 +3,79 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=devicewidth initialscale=1.0"/>
-        <link rel="stylesheeet" href="styles.css" />
-        <title>welcoming Note</title>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Notes editor</title>
     </head>
-    <body>
-        <main id="carrier">
+    <body class="container">
+        <main id="carrier" class="carrier">
+          <h1>Store and keep your data safe</h1>
+          <button type="button" id="btn-td">Show Time$dATE</button>
+
             <section class="sec1">
-                <div id="welcome-el" class="welcome-el"></div>
-                <h1>Welcome back you all!</h1>
+                <label for="name"> First Name:
+                   <input type="text" name="name" required/>
+                </label>
+
+                <label for="last name">Last Name:
+                   <input type="text" name="username" required/>
+                </label>
+
+
+                <label for="username">Username:
+                   <input type="text" name="surname" required/>
+                </label>
+
+                <label for="age"> Age:
+                   <input type="number" min="15" max="100" name="age" required/>
+                </label>
+
+                <label for="email">Email:
+                   <input type="email" name="email_name" placeholder="example@gmail.com" required/>
+                </label>
+
+                 <label for="password">Password:
+                   <input type="number" name="user_password" required/>
+                </label>
+
+                <button type="button" id="btn-s">Save</button>
             </section>
-            <section class="sec2"></section>
-            <section class="sec3"></section>
-            <section class="sec4"></section>
-            <section class="sec5"></section>
+
+            <section class="sec2">
+                <div id="notes" class="notes">
+                    <h2>Notes added</h2>
+                    <button type="button" id="btn1" class="btn1">Add Note</button>
+                </div>
+            </section>
+
+             <section class="sec3">
+                <div class="pics" id="pics">
+                    <h2>Pictures stored</h2>
+                    <button type="button" id="btn1" class="btn1">Add Note</button>
+                </div>
+            </section>
+
+            <section class="sec4">
+                <div class="docs" id="docs">
+                    <h2>Documents Stored</h2>
+                    <button type="button" id="btn2" class="btn1">Add Note</button>
+                </div>
+            </section>
+
+            <section class="sec5">
+                <div class="vid" id="vid">
+                    <h2>Videos Stored</h2>
+                    <button type="button" id="btn3" class="btn1">Add Note</button>
+                </div>
+            </section>
+
+            <section class="sec6">
+                <div class="email" id="email">
+                    <h2>Email Archieved</h2>
+                    <button type="button" id="btn4" class="btn1">Add Note</button>
+                </div>
+            </section>
+
+            <button type="submit" id="btn-sc">Save Changes</button>
         </main>
     </body>
 </html>

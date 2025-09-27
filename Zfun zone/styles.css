@@ -1,0 +1,35 @@
+.container {
+    background: grey;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.notes {
+    background-color:beige;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-transform: lowercase;
+    width: 35%;
+    height: 150px;
+    border-radius: 30px;
+    padding: 12px;
+    position: absolute;
+    right: 0px;
+}
+
+h2 {
+    color: blue;
+    padding: 3px;
+    margin-top: 0px;
+}
+
+.btn1 {
+    color: white;
+    width: 200px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: blue;
+    font-size: x-large;
+}
