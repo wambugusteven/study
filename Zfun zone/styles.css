@@ -33,3 +33,31 @@ h2 {
     background-color: blue;
     font-size: x-large;
 }
+
+.sec1 {
+    background-color: rgb(18, 16, 31);
+    width: 35%;
+    height: 500px;
+    position:absolute;
+    left: 0px;
+    border-radius: 30px;
+    text-align: right;
+}
+
+fieldset {
+     border: none;
+    padding-bottom: 1rem;
+    padding-top : 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 3px solid #3b3b4f
+} 
+label {
+    display: block;
+}
+
+input {
+    width: 70%;
+    height: 2rem;
+    border-radius: 5px;
+}
