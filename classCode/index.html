@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction</title>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" /> 
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <label>Name:
+                    <input type="text" name="txt1" value=""/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Email:
+                    <input type="email" name="mail"/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Password:
+                    <input type="password" name="pass" minlength="12" maxlength="21"/>
+                </label>
+            </fieldset>
+            <fieldset>
+          <legend> Gender</legend>
+          <label> Male:
+          <input type="radio" name="gender" value="1" checked/>
+        </label>
+        <label>Female:
+                   <input type="radio"  value="2" name="gender"/>
+        </label>
+        <label>Others:
+                   <input type="radio" value="3" name="gender"/>
+        </label>
+      </fieldset>
+
+       <fieldset>
+         <label>Dodge
+            <input type="checkbox" name="car" value="car1">
+         </label>
+          <label>BYD YangWang U-8
+            <input type="checkbox" name="car" value="car2">
+         </label>
+          <label>Nio et9
+            <input type="checkbox" name="car" value="car3">
+         </label>
+          <label>Cyber truck
+            <input type="checkbox" name="car" value="car4">
+         </label>
+          <label>Tesla 
+            <input type="checkbox" name="car" value="car5">
+         </label>
+       </fieldset>
+
+      <fieldset>
+        <B>WHICH IS FAVAROURITE JUICYJ song:</B>
+        <select>
+            <option value="1">Black and Yellow</option>
+            <option value="2">Magic trick</option>
+            <option value="3">Low</option>
+            <option value="3">let her go</option>
+            <option value="4">Juicyj can't</option>
+            <option value="5">Errday</option>
+            <option value="6">Get higher</option>
+        </select>
+      </fieldset>
+
+            <fieldset>
+                <legend>
+                    Describe your intrest:
+                </legend>
+                    <textarea placeholder="Describe your intrest in the kind of car"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
