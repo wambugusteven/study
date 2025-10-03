@@ -1,7 +1,7 @@
 const ntn = document.getElementById("bt");
-const ntn1 = document.getElementById("dsn-scr1");
+const ntn1 = document.getElementById("dtn1");
 const button1 = document.getElementById("btn-td");
-const button2 = document.getElementById("btn2");
+const button2 = document.getElementById("btn1");
 
 const mdk = () => {
     ntn.innerHTML = new Date();
