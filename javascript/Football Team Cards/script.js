@@ -168,7 +168,7 @@ const myFavoriteFootballTeam = {
       isCaptain: false,
       nickname: null,
     },
-  ],
+  ]
 };
 Object.freeze(myFavoriteFootballTeam);
 

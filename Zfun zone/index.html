@@ -7,10 +7,14 @@
         <title>Notes editor</title>
     </head>
     <body class="container">
-        <main id="carrier" class="carrier">
-          <h1>Store and keep your data safe</h1>
-          <button type="button" id="btn-td">Show Time$dATE</button>
+          
+        <div class="head">
+          <h1>STORE & SECURE YOUR DATA.</h1>
+          <button type="button" id="btn-td">Time$dATE</button>
           <div class="dt" id="dt"></div>
+        </div>
+
+        <main id="carrier" class="carrier">
 
             <section class="sec1">
                 <fieldset>
@@ -34,7 +38,7 @@
 
                 <fieldset> 
                 <label for="password">Password:
-                   <input type="number" name="user_password" placeholder="Create a strong Password" required/>
+                   <input type="password" placeholder="Create a strong Password"required/>
                 </label>
                 </fieldset>
 
@@ -53,48 +57,45 @@
                    </select>
                 </label>
                  </fieldset>
-
-                <button type="button" id="btn-s">Save</button>
+              <button type="button" id="btn-s">Update Information</button>
             </section>
 
             <section class="sec2">
+            <div class="dyn" id="dyn">
                 <h2>Notes added</h2>
                 <div id="notes" class="notes">
-                    <button id="btn1" class="btn1"></button>
                 </div>
-            </section>
+            </div>
 
-             <section class="sec3">
+             <div class="dyn" id="dyn">
                 <div class="pics" id="pics">
                     <h2>Pictures stored</h2>
-                    <button type="button" id="btn2" class="btn1" >Add Note</button>
                      <div class="dsn-scr" id="dsn-scr1"></div>
                 </div>
-            </section>
-
-            <section class="sec4">
+              </div>  
+            
+           <div class="dyn" id="dyn">
                 <div class="docs" id="docs">
                     <h2>Documents Stored</h2>
-                    <button type="button" id="btn3" class="btn1">Add Note</button>
                 </div>
-            </section>
+            </div>
 
-            <section class="sec5">
+           <div class="dyn" id="dyn">
                 <div class="vid" id="vid">
                     <h2>Videos Stored</h2>
-                    <button type="button" id="btn4" class="btn1">Add Note</button>
                 </div>
-            </section>
+            </div>
 
-            <section class="sec6">
+            <div class="dyn" id="dyn">
                 <div class="email" id="email">
                     <h2>Email Archieved</h2>
-                    <button type="button" id="btn5" class="btn1">Add Note</button>
                 </div>
+            </div>
+
             </section>
 
-            <button type="submit" id="btn-sc">Save Changes</button>
-        </main>
+            </main>
+
         <script src="script.js">d</script>
     </body>
 </html>
