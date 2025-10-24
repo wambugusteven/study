@@ -3,9 +3,9 @@
  int main () 
  {
   int num = 18, sum;
-  float dec = 4.98;
+  const float dec = 4.98;
   char big = 'S';
-  int studentID = 15;
+  const int studentID = 15;
   float studentFee = 75.25;
 char studentGrade = 'B';
  char name[] = "Steven";
