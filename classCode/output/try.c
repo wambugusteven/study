@@ -10,11 +10,11 @@
 char studentGrade = 'B';
  char name[] = "Steven";
  
- printf("This is my age: %d\n Average number: %f\n", num, dec);
+ printf("This is my age: %d\n Average number: %.2f\n", num, dec);
  printf("%c\n", big);
  sum = num + dec;
  printf("the sum  is: %d\n", sum);
- printf("Student id: %d\n Student fee: %f\n Student grade: %c\n", studentID,  studentFee, studentGrade);
+ printf("Student id: %d\n Student fee: %.3f\n Student grade: %c\n", studentID,  studentFee, studentGrade);
  printf("My name: %s\n", name);
   return 0;
  }
