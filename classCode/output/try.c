@@ -50,6 +50,8 @@ if(myage >= requiredAge) {
  printf("Not old enough?!\n");
  }
 
+(myage <= requiredAge) ? printf("Ready to vote!\n") : printf("Not old enough?!\n");
+
 if (time < 10) {
   printf("Good morning.");
 } else if (time < 20) {
