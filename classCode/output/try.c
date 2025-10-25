@@ -19,8 +19,10 @@ long int Big = 1234567890;
 long long int veryBig = 9223372036854775807; 
 unsigned long long int huge = 18446744073709551615U; 
 long double precise = 3.141592653589793238L; 
-
+double normalDouble = 3.14; 
 int normalInt = 1000; 
+ int myage = 20;
+  int requiredAge = 18;
 
  
  printf("This is my age: %d\n Average number: %.2f\n", num, dec);
@@ -30,9 +32,13 @@ int normalInt = 1000;
  printf("Student id: %d\n Student fee: %.3f\n Student grade: %c\n", studentID,  studentFee, studentGrade);
  printf("My name: %s\n", name);
  printf("you know: %.3f\n", div);
- printf("my gae is: %d", myAge >= votingAge);
-                      
-double normalDouble = 3.14;  
+ printf("my gae is: %d\n", myAge >= votingAge);
+   if(myage >= requiredAge) {
+   printf("Ready to vote!\n");
+} else {
+ printf("Not old enough?!\n");
+ }
+                       
 printf("Normal int: %d\n", normalInt);
 printf("Normal double: %lf\n", normalDouble);
 printf("Small: %hd\n", small);
