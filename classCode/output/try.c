@@ -25,6 +25,7 @@ int normalInt = 1000;
   int time = 22;
 bool isCitizen = true;
 int day = " ";
+int i = 0;
 
  
  printf("This is my age: %d\n Average number: %.2f\n", num, dec);
@@ -99,6 +100,11 @@ switch (day) {
     break;
     default:
     printf("Looking forward for the weekend?!");
+}
+
+while (i < 5) {
+  printf("%d\n", i);
+  i++;
 }
 
   return 0;
