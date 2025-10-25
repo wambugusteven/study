@@ -23,6 +23,7 @@ double normalDouble = 3.14;
 int normalInt = 1000; 
  int myage = 20;
   int requiredAge = 18;
+  int time = 22;
 
  
  printf("This is my age: %d\n Average number: %.2f\n", num, dec);
@@ -33,11 +34,6 @@ int normalInt = 1000;
  printf("My name: %s\n", name);
  printf("you know: %.3f\n", div);
  printf("my gae is: %d\n", myAge >= votingAge);
-   if(myage >= requiredAge) {
-   printf("Ready to vote!\n");
-} else {
- printf("Not old enough?!\n");
- }
                        
 printf("Normal int: %d\n", normalInt);
 printf("Normal double: %lf\n", normalDouble);
@@ -47,6 +43,20 @@ printf("Big: %ld\n", Big);
 printf("Very Big: %lld\n", veryBig);
 printf("Huge: %llu\n", huge);
 printf("Precise: %Lf\n", precise);
+
+if(myage >= requiredAge) {
+   printf("Ready to vote!\n");
+} else {
+ printf("Not old enough?!\n");
+ }
+
+if (time < 10) {
+  printf("Good morning.");
+} else if (time < 20) {
+  printf("Good day.");
+} else {
+  printf("Good evening.");
+}
 
   return 0;
  }
