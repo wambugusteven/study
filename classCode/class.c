@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <unistd.h>  // for usleep()
-#include <stdlib.h>  // for system()
+#include <unistd.h> 
+#include <stdlib.h>  
 
 int main() {
     int width = 50;     
@@ -26,7 +26,7 @@ int main() {
             for (int i = 0; i < pos; i++)
                 printf(" ");
             
-            printf("🏃");  // Different emoji for fun
+            printf("🏃");  
             fflush(stdout);
             usleep(100000);
         }
