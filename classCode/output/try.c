@@ -107,6 +107,13 @@ while (i < 5) {
   i++;
 }
 
+
+do {
+  printf(" this %d\n", i);
+  i++;
+}
+while (i < 5);
+
   return 0;
  }
 
