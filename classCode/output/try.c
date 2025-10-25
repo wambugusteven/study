@@ -24,6 +24,7 @@ int normalInt = 1000;
   int requiredAge = 18;
   int time = 22;
 bool isCitizen = true;
+int day = " ";
 
  
  printf("This is my age: %d\n Average number: %.2f\n", num, dec);
@@ -72,6 +73,32 @@ if (myAge >= 18) {
   } 
 } else {
   printf("Not old enough to vote.\n");
+}
+
+switch (day) {
+  case 1:
+    printf("Monday");
+    break;
+  case 2:
+    printf("Tuesday");
+    break;
+  case 3:
+    printf("Wednesday");
+    break;
+  case 4:
+    printf("Thursday");
+    break;
+  case 5:
+    printf("Friday");
+    break;
+  case 6:
+    printf("Saturday");
+    break;
+  case 7:
+    printf("Sunday");
+    break;
+    default:
+    printf("Looking forward for the weekend?!");
 }
 
   return 0;
