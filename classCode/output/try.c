@@ -11,6 +11,17 @@
 char studentGrade = 'B';
  char name[] = "Steven";
  float div = (float) studentFee / dec;
+ int myAge = 25;
+int votingAge = 18;
+ short int small = -100;                    
+unsigned int count = 25;                    
+long int Big = 1234567890;                  
+long long int veryBig = 9223372036854775807; 
+unsigned long long int huge = 18446744073709551615U; 
+long double precise = 3.141592653589793238L; 
+
+int normalInt = 1000; 
+
  
  printf("This is my age: %d\n Average number: %.2f\n", num, dec);
  printf("%c\n", big);
@@ -19,16 +30,8 @@ char studentGrade = 'B';
  printf("Student id: %d\n Student fee: %.3f\n Student grade: %c\n", studentID,  studentFee, studentGrade);
  printf("My name: %s\n", name);
  printf("you know: %.3f\n", div);
- printf("bool: %d\n", dec > studentFee);
-
- short int small = -100;                    
-unsigned int count = 25;                    
-long int Big = 1234567890;                  
-long long int veryBig = 9223372036854775807; 
-unsigned long long int huge = 18446744073709551615U; 
-long double precise = 3.141592653589793238L; 
-
-int normalInt = 1000;                       // standard int 
+ printf("my gae is: %d", myAge >= votingAge);
+                      
 double normalDouble = 3.14;  
 printf("Normal int: %d\n", normalInt);
 printf("Normal double: %lf\n", normalDouble);
