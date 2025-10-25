@@ -21,9 +21,9 @@ unsigned long long int huge = 18446744073709551615U;
 long double precise = 3.141592653589793238L; 
 double normalDouble = 3.14; 
 int normalInt = 1000; 
- int myage = 20;
   int requiredAge = 18;
   int time = 22;
+bool isCitizen = true;
 
  
  printf("This is my age: %d\n Average number: %.2f\n", num, dec);
@@ -44,13 +44,13 @@ printf("Very Big: %lld\n", veryBig);
 printf("Huge: %llu\n", huge);
 printf("Precise: %Lf\n", precise);
 
-if(myage >= requiredAge) {
+if(myAge >= requiredAge) {
    printf("Ready to vote!\n");
 } else {
  printf("Not old enough?!\n");
  }
 
-(myage <= requiredAge) ? printf("Ready to vote!\n") : printf("Not old enough?!\n");
+(myAge <= requiredAge) ? printf("Ready to vote!\n") : printf("Not old enough?!\n");
 
 if (time < 10) {
   printf("Good morning.");
@@ -58,6 +58,20 @@ if (time < 10) {
   printf("Good day.");
 } else {
   printf("Good evening.");
+}
+
+
+
+if (myAge >= 18) {
+  printf("Old enough to vote.\n");
+
+  if (isCitizen) {
+    printf("And you are a citizen, so you can vote!\n");
+  } else {
+    printf("But you must be a citizen to vote.\n");
+  } 
+} else {
+  printf("Not old enough to vote.\n");
 }
 
   return 0;
