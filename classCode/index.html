@@ -7,34 +7,53 @@
         <link rel="stylesheet" href="styles.css" /> 
     </head>
     <body>
+       
+        <section class="info">
         <form>
+             <h1>Form Application</h1>
+          <div>
             <fieldset>
                 <label>Name:
-                    <input type="text" name="txt1" value=""/>
+                    <input type="text" name="txt1" value="" placeholder="Input your official name"/>
                 </label>
             </fieldset>
             <fieldset>
                 <label>Email:
-                    <input type="email" name="mail"/>
+                    <input type="email" name="mail" placeholder="Example123@gmail.com"/>
                 </label>
             </fieldset>
             <fieldset>
                 <label>Password:
-                    <input type="password" name="pass" minlength="12" maxlength="21"/>
+                    <input type="password" name="pass" minlength="12" maxlength="21" placeholder="Create a strong password"/>
                 </label>
             </fieldset>
             <fieldset>
-          <legend> Gender</legend>
-          <label> Male:
-          <input type="radio" name="gender" value="1" checked/>
-        </label>
-        <label>Female:
-                   <input type="radio"  value="2" name="gender"/>
-        </label>
-        <label>Others:
-                   <input type="radio" value="3" name="gender"/>
-        </label>
-      </fieldset>
+               <legend> Gender</legend>
+                  <label> Male:
+                    <input type="radio" name="gender" value="1" checked/>
+                  </label>
+                  <label>Female:
+                    <input type="radio"  value="2" name="gender"/>
+                  </label>
+                  <label>Others:
+                    <input type="radio" value="3" name="gender"/>
+                  </label>
+            </fieldset>
+            <fieldset>
+                <label>Age:
+                    <select>
+                        <option value="1">(select)</option>
+                        <option value="2">(18-24)</option>
+                        <option value="3">(25-29)</option>
+                        <option value="4">(30-35)</option>
+                        <option value="5">(36-45)</option>
+                        <option value="6">(46-55)</option>
+                        <option value="6">(56+)</option>
+                    </select>
+                    </select>
+                </label>
+            </fieldset>
+         </div>
 
        <fieldset>
          <label>Dodge
@@ -53,20 +72,32 @@
             <input type="checkbox" name="car" value="car5">
          </label>
        </fieldset>
-
+    <div class="music">
       <fieldset>
-        <B>WHICH IS FAVAROURITE JUICYJ song:</B>
-        <select>
-            <option value="1">Black and Yellow</option>
-            <option value="2">Magic trick</option>
-            <option value="3">Low</option>
-            <option value="3">let her go</option>
-            <option value="4">Juicyj can't</option>
-            <option value="5">Errday</option>
-            <option value="6">Get higher</option>
-        </select>
-      </fieldset>
-
+        <p>Which is your favourite Juicyj song:</p>
+             <label>Black and Yellow
+               <input type="checkbox" name="song" value="song1">
+             </label>
+             <label>Magic trick
+               <input type="checkbox" name="song" value="song2">
+             </label>
+            <label>Low
+               <input type="checkbox" name="song" value="song3">
+            </label>
+            <label>let her go
+               <input type="checkbox" name="song" value="song4">
+            </label>
+            <label>Juicyj can't
+              <input type="checkbox" name="song" value="song5">
+            </label>
+            <label>Errday
+              <input type="checkbox" name="song" value="song6">
+            </label>
+            <label>Get higher
+              <input type="checkbox" name="song" value="song7">
+           </label>
+        </fieldset>
+      </div>
             <fieldset>
                 <legend>
                     Describe your intrest:
@@ -75,5 +106,23 @@
             </fieldset>
             <button type="submit">Submit</button>
         </form>
+      </section>
+      <section class="proj">
+          <div class="container">
+            <div class="song-carrier">
+                <h2>Your favourite playlist</h2>
+                <div class="image" id="image">
+                    <img  />
+                    <img id="preview" src="/home/steve/Downloads/file.enc" alt="Image preview" style="max-width: 400px; display: none;">
+                </div>
+                <div class="song-info" id="song-info"></div>
+                <div class="song-timer" id="song-timer"></div>
+                <div class="control-btns" id="control-btns"></div>
+            </div>
+            <div class="song-array">
+
+            </div>
+          </div>
+      </section>
     </body>
 </html>
