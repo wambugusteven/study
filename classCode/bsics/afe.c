@@ -1,22 +1,21 @@
 #include <stdio.h>
  int main ()
  {
-    int ar[5];
-     int count = 1;
-     int j = 0;
+   int Aage = 18;
+    int age;
+    int count;
 
+    printf("Enter your age: ");
+    scanf("%d", &age); 
+    printf("Enter count: \n");
+    scanf("%d", &count);
 
-  for(int i = 0; i <= 4; i++) 
-  {
-    printf("Enter element\n",i+1);
-    scanf("%d", &ar[i]);
-  }
-  printf("element is given below\n");
-  for(int j = 0; j <=4; j++);
-  {
-  printf("%d", ar[j]);
-  }
-
+    if (age >= Aage) {
+        printf("Old enough to vote!\n");
+    } else {
+        printf("Still have a long way to go.\n");
+    }
+  
   while (count <= 6) {
     if(count <6) {
       printf("Dice number less than 6?!\n");
@@ -26,8 +25,6 @@
 
     count++;
   }
-
+  
   return 0;
    }
-
-     
