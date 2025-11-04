@@ -4,6 +4,8 @@
    int Aage = 18;
     int age;
     int count;
+    int myNumbers[] = {2, 3, -4, 5, 6, 0, 9};
+    int length = sizeof(myNumbers) / sizeof(myNumbers[0]);
 
     printf("Enter your age: ");
     scanf("%d", &age); 
@@ -32,8 +34,16 @@
     break;
     case 0:
     printf("You're a child!\n");
-    default: 
-    printf("Invalid option");
+  }
+
+  for (int j = 0; j < length; j++) {
+    if(myNumbers[j] < length) {
+      continue;
+    }
+    if(myNumbers[j] == 0) {
+      break;
+    }
+    printf("%d\n", myNumbers[j]);
   }
   
   return 0;
