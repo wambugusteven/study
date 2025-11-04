@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="styles.css" /> 
     </head>
     <body>
+      <nav>
+        <button>🌙</button>
+      </nav>
        
         <section class="info">
         <form>
@@ -24,7 +27,8 @@
             </fieldset>
             <fieldset>
                 <label>Password:
-                    <input type="password" name="pass" minlength="12" maxlength="21" placeholder="Create a strong password"/>
+                    <input type="password" id="pass" minlength="12" maxlength="21" placeholder="Create a strong password"/>
+                    <input type="checkbox" onclick="pass.type = this.checked ? 'text' : 'password'" />
                 </label>
             </fieldset>
             <fieldset>
