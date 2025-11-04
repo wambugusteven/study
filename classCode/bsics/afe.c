@@ -25,6 +25,16 @@
 
     count++;
   }
+
+  switch (age >= Aage) {
+    case 1:
+    printf("You're an adult.\n");
+    break;
+    case 0:
+    printf("You're a child!\n");
+    default: 
+    printf("Invalid option");
+  }
   
   return 0;
    }
