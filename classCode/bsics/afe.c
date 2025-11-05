@@ -17,7 +17,7 @@ int main() {
     printf("Enter count: ");
     scanf("%d", &count);
 
-    // Age check
+  
     if (age >= Aage) {
         printf("Old enough to vote!\n");
     } else {
@@ -69,6 +69,9 @@ int main() {
     }
 
     printf("And the lowest Number is: %d\n", lowestNumber);
+
+    char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+    printf("%s", greetings);
 
     return 0;
 }
