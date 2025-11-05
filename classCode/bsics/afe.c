@@ -6,10 +6,13 @@
     int count;
     int myNumber[7];
     int length = sizeof(myNumber) / sizeof(myNumber[0]);
+    int MyNum[] = {10, 20, 30, 40, 50, 60, 90, 100};
+    int i;
+    int LENGTH = sizeof(MyNum) / sizeof(MyNum[0]);
 
     printf("Enter your age: ");
     scanf("%d", &age); 
-    printf("Enter count: \n");
+    printf("Enter count: ");
     scanf("%d", &count);
 
     if (age >= Aage) {
@@ -52,6 +55,10 @@
       break;
     }
     printf("%d\n", myNumber[j]);
+  }
+
+  for (i = 0; i < LENGTH; i++) {
+    printf("%d\n", MyNum[i]);
   }
   
   return 0;
