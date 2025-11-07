@@ -7,3 +7,8 @@ function word () {
 }
 
 ntn.addEventListener("click", word);
+
+
+function action () {
+  dyn.innerHTML = "Please insert  picture to be stored here.";
+}

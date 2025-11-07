@@ -14,7 +14,10 @@
 .sec1 {
     align-items: center;
     gap: 5px;
-}
+    text-align: center;
+    border-radius: 15px;
+    
+} 
 
 input {
     width: 70%;
