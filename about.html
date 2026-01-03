@@ -1,18 +1,62 @@
 <!DOCTYPE html>
-<head>
-<title>
-    My story
-</title>
-</head>
-<body>
-<h1>
-    Wambugu's story
-</h1>
-<p>
-  Hi! Am steven from Kenya, form four leaver. I'm inspired to learn coding since every problem in this world
-   requires a solution that can only be solved through coding
-</p>
-</body>
+<html lang="en">
+    <head>
+        <title>About</title>
+    </head>
+    <body>
+        <button class="sign-btn" id="sign-btn">Sign Up</button>
+
+<section>
+    <div class="sign-display" id="sign-display"></div>
+</section>
+
+<script>
+    const sign = document.getElementById("sign-btn");
+const form = document.getElementById("sign-display");
+
+function display() {
+    form.innerHTML = `
+      <form method="post" action="mailto:sydylan5219@gmail.com"> 
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input required type="text" id="first-name" name="first-name" /></label>
+            <label for="last-name">Enter Your Last Name: <input required type="text" id="last-name" name="last-name" /></label>
+            <label for="email">Enter Your Email: <input required type="email" id="email" name="email" /></label>
+            <label for="new-password">Create a New Password: <input required type="password" pattern="[a-z0-9]{8,}" id="new-password" name="password" /></label>
+          </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal-account"><input name="account-type" type="radio" id="personal-account" class="inline" checked> Personal</label>
+            <label for="business-account"><input name="account-type" type="radio" id="business-account" class="inline"> Business</label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture"> Upload a profile picture:
+                <input id="profile-picture" type="file" name="file"/>
+            </label>
+            <label for="age"> Input your age(years): <input id="age" type="number" min="13" max="120" name="age" />
+            </label>
+            <label for="referrer"> How did you hear about us?
+                <select id="referrer" name="referrer"> 
+                <option value="">(select one)</option>
+                <option value="1">freeCodeCamp News</option>
+                <option value="2">freeCodeCamp YouTube Channel</option>
+                <option value="3">freeCodeCamp Forum</option>
+                <option value="4">Other</option>
+              </select>
+              </label>
+              <label for="bio">Provide a bio:
+                <textarea placeholder="I like coding on the beach..." rows="3" cols="30" id="bio" name="bio"></textarea>
+              </label>
+        </fieldset>
+          <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          </label>
+      <input type="submit" value="Submit" /> 
+    </form>
+    `;
+}
+
+sign.addEventListener("click", display);
+</script>
+        
+    </body>
 </html>
-    
-    
