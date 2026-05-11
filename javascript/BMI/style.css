@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    
+}
+
+.container {
+      text-align: center;
+    background-color: #2e2e2e;
+    border-radius: 15px;
+    gap: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 20px;
+
+    position: absolute;
+    right: 450px;
+    top: 100px;
+}
+
+.screen {
+    width: 95%;
+    color: #2e2eff;
+    height: 10rem;
+    text-align: left;
+    font-size: x-large;
+}
+
+.bmi {
+    text-align: right;
+    color: #2e2e;
+    font-size: xx-large;
+}
+ 
+.category {
+    text-align: right;
+    color: #2e2e;
+    font-size: large;
+}
+
+.btns {
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+     border-radius: 5px;
+    background-color: rgb(0, 208, 255);
+    color: black;
+    text-align: center;
+    font-size: large;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    padding: 10px;
+}

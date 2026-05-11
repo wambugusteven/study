@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+        
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>BMI Calculator</h1>
+        <div class="container">
+            <div class="screen">
+                <div class="wght">Weight: <span class="weight" id="weightNo">0</span> </div>
+                <div class="hght">Height: <span class="height" id="heightNo">0</span></div>
+                <div class="bmi">BMI: <span class="bmi-results" id="bmi-results">0</span></div>
+                <div class="category">Category: <span class="categ" id="categ">Empty</span></div>
+            </div>
+            <div class="details">
+               <p>BMI is actually a measure used to estimate whether a person has a healthy body weight for their height.
+                It weight(kgs) divided by the square of their own height(Meters).
+        <div>
+            <p>To show know your BMI,</p>
+                <p>Enter your weight(Kgs): <input id="Aweight" type="number"/></p>
+                <p>Enter your Height(cm): <input id="Aheight" type="number"/></p>
+        </div>
+            </div>
+            <button onclick=calBMI()>Claculate</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
