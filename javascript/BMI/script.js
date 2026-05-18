@@ -1,35 +1,72 @@
-
-const weight = document.getElementById("WeightNo");
-const height = document.getElementById("HeightNo");
+/*
+const weightNo = document.getElementById("weightNo");
+const heightNo = document.getElementById("heightNo");
 const bmi = document.getElementById("bmi-results");
 const category = document.getElementById("category");
-const Aweight = document.getElementById("Aweight")
+const weightA = document.getElementById("weight");
+const heightA = document.getElementById("height")
 ;
 
-function calIBM(height, weight) {
-    let heigh = height * height;
-    let BMI = (weight)/(heigh);
+function calIBM() {
+    let BMI;
+    let height = heightA.value;
+    let weight = weightA.value;
+    let heightInM = height / 100;
+return BMI = weight / (heightInM * heightInM);
 }
 
-switch(true) {
+
+function display() { 
+  switch(true) {
    case BMI < 18.5:
-    category.innerHTML = "Underweight";
+    category.innerText = "Underweight";
     break;
     case BMI < 25:
-        category.innerHTML = "Healthy";
+        category.innerText = "Healthy";
         break;
     case BMI < 30:
-        category.innerHTML = "OverWeight";
+        category.innerText = "OverWeight";
     break;
     default:
-        category.innerHTML = "Obese";
+        category.innerText = "Obese";
 }
-
-function display() {
-  category.innerHTML = "category";
-  weight.innerHTML = "50";
-  height.innerHTML = "40";
+  weightNo.innerText = "Weight: " + weight.value;
+  heightNo.innerText = "height.value";
   bmi.innerText = calBMI();
 }
 
+*/
 
+let bmi;
+let heightW;
+let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value;
+
+const calIbm = () => {
+   heightW = height / 100;
+   
+   return bmi = weight / (heightW * heightW);
+}
+
+switch(true) {
+    case bmi < 18: {
+        document.getElementById("category").innerText = "Underweight";
+    }
+    break;
+    case bmi < 25: {
+        document.getElementById("category").innerText = "Healthy";
+    }
+    break;
+    case bmi < 35: {
+        document.getElementById("category").innerText = "OverWeight";
+    }
+    break;
+    defau
+}
+
+const display =  () => {
+    document.getElementById("weightNo").innerHTML = weight.value;
+    document.getElementById("heightNo").innerHTML = "There";
+    document.getElementById("bmi-results").innerHTML = calIbm();
+
+}

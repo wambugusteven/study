@@ -10,23 +10,29 @@
     <body>
         <h1>BMI Calculator</h1>
         <div class="container">
-            <div class="screen">
-                <div class="wght">Weight: <span class="weight" id="weightNo">0</span> </div>
-                <div class="hght">Height: <span class="height" id="heightNo">0</span></div>
-                <div class="bmi">BMI: <span class="bmi-results" id="bmi-results">0</span></div>
-                <div class="category">Category: <span class="categ" id="categ">Empty</span></div>
-            </div>
+           
             <div class="details">
                <p>BMI is actually a measure used to estimate whether a person has a healthy body weight for their height.
-                It weight(kgs) divided by the square of their own height(Meters).
+                It weight(kgs) divided by the square of their own height(Meters).</p>
         <div>
+
+            <p>BMI = weight(kg) / height(m)²</p>
             <p>To show know your BMI,</p>
-                <p>Enter your weight(Kgs): <input id="Aweight" type="number"/></p>
-                <p>Enter your Height(cm): <input id="Aheight" type="number"/></p>
+                <label> your weight(Kgs): <input type="number" id="weight"/></label>
+                <label> your height(Meters): <input type="number" id="height"/></label>
         </div>
             </div>
-            <button onclick=calBMI()>Claculate</button>
+
+             <div class="screen">
+                <div>Weight:<span id="weightNo">0</span> </div>
+                <div>Height:<span id="heightNo">0</span></div>
+                <div>BMI:<span id="bmi-results">0</span></div>
+                <div>Category:<span id="category">..</span></div>
+            </div>
+
+            <button onclick="display()">Calculate</button>
         </div>
+        
         <script src="script.js"></script>
     </body>
 </html>
