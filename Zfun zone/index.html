@@ -1,109 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=devicewidth initialscale=1.0"/>
-        <link rel="stylesheet" href="styles.css" />
-        <title>Notes editor</title>
-    </head>
-    <body class="container">
-          
-        <div class="head">
-          <h1>STORE & SECURE YOUR DATA.</h1>
-          <button type="button" id="btn-td">Time $ dATE</button>
-          <div class="dt" id="dt"></div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Store</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav>
+        <a class="dash" href="#">Dashboard</a>
+        <a href="#">Sign In</a>
+        <a href="#">Log in</a>
+        <a href="#">Profile</a>
 
-        <main id="carrier" class="carrier">
-
-            <section class="sec1">
-                <fieldset>
-                <label for="name"> Name:
-                   <input type="text" name="name" placeholder="Enter your name here....." required/>
-                </label>
-                </fieldset>
-                  
-                 <fieldset>
-                <label for="username">Username:
-                   <input type="text" name="surname" placeholder="Enter your username....." required/>
-                </label>
-                </fieldset>
-
-                  <fieldset>
-                <label for="email">Email:
-                   <input type="email" name="email_name" placeholder="example@gmail.com" required/>
-                </label>
-                </fieldset>
-
-
-                <fieldset> 
-                <label for="password">Password:
-                   <input type="password" placeholder="Create a strong Password"required/>
-                </label>
-                </fieldset>
-
-                <fieldset>
-                <label for="age"> Age:
-                   <input type="number" min="15" max="100" name="age" required/>
-                </label>
-                </fieldset>
-
-                <fieldset>
-                <label for="gender">Gender:
-                   <select>
-                    <option>select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                   </select>
-                </label>
-                 </fieldset>
-              <button type="button" id="btn-s">Update Information</button>
-            </section>
-
-            <section class="sec2">
-            <div class="dyn" id="dyn">
-                <h2>Notes added</h2>
-                <input type="document" />
-                <div id="notes" class="notes">
-                </div>
-            </div>
-
-             <div class="dyn" id="dyn">
-                <div class="pics" id="pics">
-                    <h2>Pictures stored</h2>
-                    <input type="file" />
-                     <div class="dsn-scr" id="dsn-scr1"></div>
-                </div>
-              </div>  
-            
-             <div class="dyn" id="dyn">
-                <div class="audio" id="audio">
-                    <h2>Audio</h2>
-                    <input type="audio" />
-                    <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3" controls></audio>
-                    <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3" loop controls muted></audio>
-                </div>
-            </div>
-
-           <div class="dyn" id="dyn">
-                <div class="vid" id="vid">
-                    <h2>Videos Stored</h2>
-                    <input type="video" />
-                   <video src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" loop controls muted width="400" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"></video>
-                </div>
-            </div>
-
-            <div class="dyn" id="dyn">
-                <div class="email" id="email">
-                    <h2>Email Archieved</h2>
-                    <input type="email" />
-                </div>
-            </div>
-
-            </section>
-
-            </main>
-
-        <script src="script.js">d</script>
-    </body>
+    </nav>
+    <div class="container">
+        <h1>Store your data:</h1>
+        <p class="Pbrief">Keep your data safe and secure. Trust is a weakness that can be exploited as a vulnerability</p>
+        <div class="welcome"></div>
+        <button class="popup">Sign-in</button>
+        <div class="calculator"></div>
+    </div>
+    <script src="script.js">    </script>
+</body>
 </html>
+
+
