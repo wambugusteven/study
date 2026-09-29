@@ -2,10 +2,7 @@ public class Main {
   public static void main(String[] args) {
     int num = 10;
 
-    System.out.println("Hello everyone!");
-    System.out.print("...");
-    System.out.println("Just started learning Java");
-    System.out.print("The sum is:");
-    System.out.println(3 + 4);
+    System.out.println("Hello everyone!" + "..." + "Just started learning Java" + "The sum is:" + " " + 3 + 4);
+   
   }
 }
