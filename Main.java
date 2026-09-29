@@ -5,5 +5,7 @@ public class Main {
     System.out.println("Hello everyone!");
     System.out.print("...");
     System.out.println("Just started learning Java");
+    System.out.print("The sum is:");
+    System.out.println(3 + 4);
   }
 }
