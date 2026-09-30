@@ -45,13 +45,13 @@ default: "Enter age";
 
 
 
-const ageCheker = () => {
-if (age >= 18) {
-  windows.alert("You are an adult, where is your ID!")
-} else (
-  windows.alert("Stay safe kid!")
-)
+const ageCheker = (age) => {
+    if (age >= 18) {
+        return "You are an adult, where is your ID!";
+    } else {
+        return "Stay safe kid!";
+    }
 };
 
 console.log("results:", " ", diff()) ;
-console.log("AgeCheker:", ageCheker());
+console.log(ageCheker(age));
