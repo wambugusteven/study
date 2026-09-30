@@ -2,8 +2,7 @@ let expression = 0;
 let category;
 let a = 7;
 let b = 5;
-let age;
-
+let age = 20;
 /*
 let a = parseInt(prompt("Enter a:"), 10);
 let b = parseInt(prompt("Enter b:"), 10);
@@ -52,6 +51,18 @@ const ageCheker = (age) => {
         return "Stay safe kid!";
     }
 };
+const ageEligibility = (age) => {
+for (let i = 0; i > age; age++) {
+ return "Age is: ${i}";
+
+  if(age >= 18) {
+    return "Age eligible for driving";
+  } else {
+    return "You have a long way to go!";
+  }
+}
+};
 
 console.log("results:", " ", diff()) ;
 console.log(ageCheker(age));
+console.log("hey you", ageEligibility(age));
