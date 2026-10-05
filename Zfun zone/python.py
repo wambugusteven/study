@@ -10,3 +10,12 @@ name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 print("Hello", name)
 print("Age is:", age)
+
+# operators in python
+a + b    # Addition
+a - b    # Subtraction
+a * b    # Multiplication
+a / b    # Division
+a // b   # Floor division
+a % b    # Remainder
+a ** b   # Power
