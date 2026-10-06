@@ -47,3 +47,6 @@ fruits.append("grape")
 
 # at a specific location
 fruits.insert(1, "Avacado")
+
+# removing an element
+fruits.remove("apple")
