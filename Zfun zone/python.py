@@ -31,3 +31,5 @@ else:
 
 if age >= 18 and age <= 25:
     print("Young adult")
+
+    fruits = ["apple", "banana", "mango"]
