@@ -44,3 +44,6 @@ print(fruits[-2])
 
 # adding elements on an array
 fruits.append("grape")
+
+# at a specific location
+fruits.insert(1, "Avacado")
