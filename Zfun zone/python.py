@@ -40,4 +40,7 @@ print(fruits[1])
 print(fruits[2]) 
 # negative indexies 
 print(fruits[-1])  
-print(fruits[-2])  
+print(fruits[-2]) 
+
+# adding elements on an array
+fruits.append("grape")
