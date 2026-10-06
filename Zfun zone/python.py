@@ -32,7 +32,7 @@ else:
 if age >= 18 and age <= 25:
     print("Young adult")
 
-    fruits = ["apple", "banana", "mango"]
+# array
 fruits = ["apple", "banana", "mango"]
 
 print(fruits[0])  
@@ -51,3 +51,5 @@ fruits.insert(1, "Avacado")
 # removing an element
 fruits.remove("apple")
 fruits.pop(1)
+
+print(len(fruits))
