@@ -33,3 +33,11 @@ if age >= 18 and age <= 25:
     print("Young adult")
 
     fruits = ["apple", "banana", "mango"]
+fruits = ["apple", "banana", "mango"]
+
+print(fruits[0])  
+print(fruits[1])  
+print(fruits[2]) 
+# negative indexies 
+print(fruits[-1])  
+print(fruits[-2])  
