@@ -50,3 +50,4 @@ fruits.insert(1, "Avacado")
 
 # removing an element
 fruits.remove("apple")
+fruits.pop(1)
