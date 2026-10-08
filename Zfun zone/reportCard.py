@@ -9,3 +9,7 @@ print(age, type(age))
 
 score = 80.5
 print(score, isinstance(score, (int, float)), type(score))
+
+string = '''My name'''
+msg = 'it\'s a sunny day'
+print(string, msg)
