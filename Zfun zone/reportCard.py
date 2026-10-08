@@ -1,5 +1,7 @@
 name = 'Denver'
 print(name, type(name))
+print("'in' operator:", 'den' in name)
+print("Characters:", len(name))
 
 is_student = True
 print(is_student, type(is_student))
