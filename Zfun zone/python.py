@@ -53,3 +53,11 @@ fruits.remove("apple")
 fruits.pop(1)
 
 print(len(fruits))
+
+team = 'Chelsea'
+print(team, 'World champions')
+print('Palmer,', 'Joao,', 'Caicedo', 'and', 'James', 'are my favorite players')
+my_boolean = True
+print('Boolean status:', my_boolean)
+print(type(team))
+isinstance(team, float)
