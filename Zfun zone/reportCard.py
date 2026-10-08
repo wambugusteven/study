@@ -2,6 +2,7 @@ name = 'Denver'
 print(name, type(name))
 print("'in' operator:", 'den' in name)
 print("Characters:", len(name))
+print("Indexing: ", name[4])
 
 is_student = True
 print(is_student, type(is_student))
