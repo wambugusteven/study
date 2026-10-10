@@ -22,3 +22,4 @@ print(string, msg)
 
 password = "Hey You fool"
 print(password[0:7])
+print(password[::])
