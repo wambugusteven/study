@@ -19,3 +19,6 @@ print(details)
 string = f"'''My name is {name}'''"
 msg = 'it\'s a sunny day'
 print(string, msg)
+
+password = "Hey You fool"
+print(password[0:7])
