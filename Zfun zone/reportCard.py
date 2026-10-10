@@ -16,6 +16,6 @@ print(score, isinstance(score, (int, float)), type(score))
 details = name + ' ' + str(age) + ' ' + str(score)
 print(details)
 
-string = '''My name'''
+string = f"'''My name is {name}'''"
 msg = 'it\'s a sunny day'
 print(string, msg)
