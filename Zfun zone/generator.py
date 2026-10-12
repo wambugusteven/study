@@ -6,7 +6,7 @@ course_code = 'BCS'
 student_age = 28
 address = '20320 Nchiru'
 address += ', Apartment 4B'
-student_info = first_name + ' is ' + student_age
+student_info = first_name + ' is ' + str(student_age) + ' of age.'
 
 
 print(first_name, last_name)
