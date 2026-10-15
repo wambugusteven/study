@@ -1,4 +1,4 @@
-import { Fragment } from raect
+import { Fragment } from "react"
 const greetings = () => {
  const name = "Kibucha";
  return (
@@ -10,5 +10,17 @@ const greetings = () => {
     </Fragment>
  );
 };
+
+const Hierachy = () => {
+    const manager = "Jeff"
+    return (
+        <>
+         <h2 className = "title2">
+            {manager} here
+         </h2>
+         <p>I'm the manager</p>
+        </>
+    )
+} 
 
 export default greetings;
