@@ -11,7 +11,7 @@ const greetings = () => {
  );
 };
 
-const Hierachy = () => {
+export default function Hieracy ()  {
     const manager = "Jeff"
     return (
         <>
