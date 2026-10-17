@@ -1,4 +1,10 @@
 import { Fragment } from "react"
+import Cat from "./cat ";
+export default function App() {
+  return (
+    < cat/>
+  );
+
 const greetings = () => {
  const name = "Kibucha";
  return (
@@ -11,7 +17,7 @@ const greetings = () => {
  );
 };
 
-export default function Hieracy ()  {
+ function Hieracy ()  {
     const manager = "Jeff"
     return (
         <>
