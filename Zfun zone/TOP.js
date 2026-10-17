@@ -66,3 +66,8 @@ for (let i = 0; i > age; age++) {
 console.log("results:", " ", diff()) ;
 console.log(ageCheker(age));
 console.log("hey you", ageEligibility(age));
+
+
+import App from "react.jsx"
+
+//today
