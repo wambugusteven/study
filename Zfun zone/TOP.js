@@ -68,6 +68,6 @@ console.log(ageCheker(age));
 console.log("hey you", ageEligibility(age));
 
 
-import App from "react.jsx"
+import App from "./react.jsx"
 
 //today
