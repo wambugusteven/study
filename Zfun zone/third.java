@@ -1,5 +1,6 @@
 import javax.swing.*;
 public class FindPrice {
+    
     public static void main(String[] args) {
         final int NUMBER_OF_ITEMS = 10;
         int [] validValues = [101. 108, 201, 213, 266, 304, 311, 409, 411, 412];
@@ -12,3 +13,12 @@ public class FindPrice {
     }
 }
 
+public class MenuItems { 
+ public String name;
+ public double price;
+
+public class MenuItems (String name, double price) {
+    this.name = name;
+    this.price = price;
+}
+    }
