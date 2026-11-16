@@ -10,6 +10,7 @@ public class second {
         System.out.println("This is my first code in Java");
         System.out.println("Today, " + name + " is " + age + " years old");
         System.out.println(banana.item + ", " +  banana.price);
+        System.out.println("The price of banana after taxing is: " + banana.payAfterTax())
 
     }
 }
