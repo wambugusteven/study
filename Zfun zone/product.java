@@ -1,10 +1,10 @@
-public class oneProduct {
+public class product {
     private String name;
     private double sellingPrice;
     private double totalSales, totalCost;
     private int onHand, sold;
 
-  public oneProduct(String n, double p) {
+  public product(String n, double p) {
     name = n;
     sellingPrice = p;
     totalCost = 0.0;

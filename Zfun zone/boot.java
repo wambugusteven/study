@@ -13,7 +13,9 @@ public class boot {
         setCoffeePrice(coffeePrice);
         setCoffeeName(coffeeName);
     }
-
+  public void receiveProduct(int q, double c) {
+    
+  }
     public double payAfterTax() {
         double tax = 0.08;
         return price + (price * tax);
@@ -29,7 +31,7 @@ public class boot {
         this.price = price;
     }
 
-    public void setCoffeeName( String coffeeName) {
+   public void setCoffeeName( String coffeeName) {
         String lowercaseName = coffeeName.toLowerCase();
         for( String validName : VALID_NAME) {
             if(validName.equals(lowercaseName)) {
@@ -38,7 +40,7 @@ public class boot {
             }
         }
          throw  new IllegalArgumentException("Invalid drinks. Must be one of this: " + String.join(", ", VALID_NAME));
-    }
+    } 
 
     public void setCoffeePrice( int coffeePrice) {
         if(coffeePrice < 0) {
