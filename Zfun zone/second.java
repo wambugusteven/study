@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class second {
     public static void main(String[] args){
+
+        
+
         String name = "Maina";
         int age = 47;
 

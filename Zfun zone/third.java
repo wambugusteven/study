@@ -1,4 +1,5 @@
 import javac.swing.*;
+
 public class FindPrice {
     
     public static void main(String[] args) {
