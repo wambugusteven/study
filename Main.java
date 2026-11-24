@@ -17,7 +17,7 @@ public class Main {
 
     final int NUM_UNITS = 3;
     int num = new int[NUM_UNITS];
-    Scanner keyboard = new scanner(System.int)
+    Scanner keyboard = new scanner(System.in);
 
     String[] cars = {"Volvo", "Honda", "Ford", "BYD", "Isuzu", "Toyota"};
     int[] rating = {87, 91, 90, 92, 87, 95};
