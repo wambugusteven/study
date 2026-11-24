@@ -21,6 +21,14 @@ public class car {
             myCar.mpg = 40;
             myCar.color = "balck";
 
+            Strings[] cars = {"Honda", "Subaru", "Mazda CX series", "BYD", "Tesla", "Toyota"};
+            for(c: cars) {
+                System.out.println(c);
+            }
+            for(int i; i < 0; i++) {
+                System.out.println(cars(i));
+            }
+
             Scanner in = new scanner (System.in);
             System.out.println("What is your favorite fruit?");
 
