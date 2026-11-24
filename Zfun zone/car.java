@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class car {
-    String make;
+    private String make;
     String model;
     String color;
     int year;
@@ -18,6 +20,23 @@ public class car {
             myCar.year = 2024;
             myCar.mpg = 40;
             myCar.color = "balck";
+
+            Scanner in = new scanner (System.in);
+            System.out.println("What is your favorite fruit?");
+
+            int choice = 0;
+
+            do {
+                System.out.println("1. Apples");
+                System.out.println("2. Oranges");
+                System.out.println("3. Pinneples");
+                System.out.println("4. Avocado");
+                System.out.println("5. Melon");
+                System.out.println("6. Pawpaw");
+                choice = in.nextInt();
+            } while (choice > 6) {
+                System.out.println("you chose: " + choice);
+            }
         }
 
 }
