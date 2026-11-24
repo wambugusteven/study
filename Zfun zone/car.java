@@ -26,7 +26,7 @@ public class car {
                 System.out.println(c);
             }
             for(int i; i < 0; i++) {
-                System.out.println(cars(i));
+                System.out.println(cars(i));    
             }
 
             Scanner in = new scanner (System.in);
@@ -44,6 +44,15 @@ public class car {
                 choice = in.nextInt();
             } while (choice > 6) {
                 System.out.println("you chose: " + choice);
+            }
+
+            int index = 0;
+            for(int j; j < 200; j++) {
+                for ( j % 2 == 0) {
+                    evenNumbers[index] = i;
+                    index++;
+                }
+                System.out,println("Even numbers are:" + evenNumbers)
             }
         }
 
