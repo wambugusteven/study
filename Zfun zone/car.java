@@ -54,6 +54,8 @@ public class car {
                 }
                 System.out,println("Even numbers are:" + evenNumbers)
             }
+
+            Scanner in = new numbOne Scanner();
         }
 
 }
