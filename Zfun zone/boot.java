@@ -1,4 +1,4 @@
-public class boot {
+public class boot {                                   
     private String item;
     private int price;
     private String coffeeName;
@@ -10,60 +10,69 @@ public class boot {
     public boot(String item, int price) {
         this.item = item;
         setPrice(price);
+    }
+
+    public boot(String item, int price, String coffeeName, int coffeePrice) {
+        this.item = item;
+        setPrice(price);
         setCoffeePrice(coffeePrice);
         setCoffeeName(coffeeName);
     }
-  public void receiveProduct(int q, double c) {
-    
-  }
+
+   
     public double payAfterTax() {
         double tax = 0.08;
         return price + (price * tax);
     }
 
-    public void setPrice( int price) {
-        if(price < 0) {
+    public void setPrice(int price) {
+        if (price < 0) {
             throw new IllegalArgumentException("Price cannot be negative");
-        } 
+        }
         if (price > MAX_PRICE) {
-            throw new IllegalArgumentException("Price cannot exceed " +  MAX_PRICE);
+            throw new IllegalArgumentException("Price cannot exceed " + MAX_PRICE);
         }
         this.price = price;
     }
 
-   public void setCoffeeName( String coffeeName) {
-        String lowercaseName = coffeeName.toLowerCase();
-        for( String validName : VALID_NAME) {
-            if(validName.equals(lowercaseName)) {
-                this.coffeeName = coffeeName;
+    public void setCoffeeName(String coffeeName) {
+        if (coffeeName == null) {
+            throw new IllegalArgumentException("Coffee name cannot be null.");
+        }
+
+        String lowercaseName = coffeeName.trim().toLowerCase();
+        for (String validName : VALID_NAME) {
+            if (validName.equals(lowercaseName)) {
+                this.coffeeName = lowercaseName;
                 return;
             }
         }
-         throw  new IllegalArgumentException("Invalid drinks. Must be one of this: " + String.join(", ", VALID_NAME));
-    } 
+        throw new IllegalArgumentException("Invalid drink name. Must be one of: " + String.join(", ", VALID_NAME));
+    }
 
-    public void setCoffeePrice( int coffeePrice) {
-        if(coffeePrice < 0) {
-            throw new IllegalArgumentException("Price cannot be negative");
+    public void setCoffeePrice(int coffeePrice) {
+        if (coffeePrice < 0) {
+            throw new IllegalArgumentException("Coffee price cannot be negative");
         }
-        if( coffeePrice > MAX_PRICE) {
-            throw new IllegalArgumentException("Price cannot exceed " + MAX_PRICE);
+        if (coffeePrice > MAX_PRICE) {
+            throw new IllegalArgumentException("Coffee price cannot exceed " + MAX_PRICE);
         }
-      this.coffeePrice = coffeePrice;
+        this.coffeePrice = coffeePrice;
     }
 
     public String getItem() {
         return item;
     }
-    public double getPrice() {
+
+    public int getPrice() {                           
         return price;
     }
+
     public String getCoffeeName() {
         return coffeeName;
     }
+
     public int getCoffeePrice() {
         return coffeePrice;
     }
-
-
 }
