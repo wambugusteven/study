@@ -6,4 +6,7 @@ public class Glocery {
         product = bobsBeans, pamsPizza;
         bobsBeans = new product("Jane ");
     }
+
+    Scanner scanner = new scanner();
+    scanner close();
 }
