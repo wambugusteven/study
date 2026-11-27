@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class Glocery {
+
     public static void main(String[] args) {
         product = bobsBeans, pamsPizza;
-        bobsBeans = new product("Jane ");what 
+        bobsBeans = new product("Jane ");
     }
 }
