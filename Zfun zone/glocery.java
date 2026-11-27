@@ -7,6 +7,6 @@ public class Glocery {
         bobsBeans = new product("Jane ");
     }
 
-    Scanner scanner = new scanner();
-    scanner close();
+   Scanner scanner = new Scanner(System.in);
+    scanner.close();
 }
